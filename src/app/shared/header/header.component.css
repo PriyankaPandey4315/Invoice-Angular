@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa; /* Light background color for the page */
+  }
+  
+  /* App Header Styling */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007fff; /* Dark background for header */
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  /* Flexbox Container for Toggle Buttons */
+  .d-flex {
+    display: flex;
+  }
+  
+  .app-header .ms-3 {
+    margin-left: 1rem;
+  }
+  
+  .app-header .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Toggle Buttons */
+  .toggle-sidebar, .pin-sidebar {
+    background-color: white;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .toggle-sidebar:hover, .pin-sidebar:hover {
+    color: #0d6efd; /* Highlight color on hover */
+  }
+  
+  /* App Brand (Logo) */
+  .app-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-brand .logo {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+  }
+  
+  /* Search Container */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Slightly lighter background for the search container */
+    border-radius: 25px;
+    padding: 5px 15px;
+  }
+  
+  .search-container input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 200px; /* Set search input width */
+  }
+  
+  .search-container input:focus {
+    outline: none;
+  }
+  
+  .search-container i {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search-container input::placeholder {
+    color: #bbb;
+  }
+  
+  /* Header Actions - Country Dropdown */
+  .header-actions .d-lg-flex {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .header-country-flag {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    min-width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-menu .country-container {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .dropdown-menu .country-container a {
+    padding: 10px;
+    display: grid;
+    align-items: right;
+  }
+  
+  .dropdown-menu .country-container a:hover {
+    background-color: #f1f1f1; /* Highlight country on hover */
+  }
+  
+  .dropdown-menu .country-container img {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+ 
