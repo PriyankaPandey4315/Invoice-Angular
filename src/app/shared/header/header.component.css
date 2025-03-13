@@ -1,4 +1,4 @@
-/* General Reset */
+General Reset
 * {
   margin: 0;
   padding: 0;
@@ -50,11 +50,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
   border-radius: 8px;
 }
-
+  .pin-sidebar i{
+    color: #0d6efd
+  }
 .box-shadow {
  inset: 1.5px 1.5px 0px rgba(255, 255, 255, .25), 
  inset -1.5px -1.5px 0px rgba(0, 0, 0, .1);
@@ -72,8 +72,8 @@ button, select {
 .app-brand {
   display: flex;               
   justify-content: flex-start;  
-  align-items: center;         
-  width: 100%;                 
+  align-items: left;         
+  width: 100%;             
 }
 
 .app-brand .logo {
@@ -128,7 +128,7 @@ img {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-input, button, select, optgroup, textarea {
+input, button {
   margin: 0;
   font-family: inherit;
   font-size: inherit;

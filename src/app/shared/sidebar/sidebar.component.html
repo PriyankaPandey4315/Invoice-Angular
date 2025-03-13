@@ -1,0 +1,62 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidebar Drawer -->
+  <mat-sidenav #drawer mode="side" [(opened)]="opened" class="sidenav">
+    <!-- Header -->
+  
+      
+
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="assets/user.jpg" alt="Profile" class="profile-pic" />
+      <div class="profile-info">
+        <h3>Nick Gonzalez</h3>
+        <p>Dept Admin</p>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let item of menuItems" (click)="onMenuItemClick(item)">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.label }}</span>
+        <mat-icon *ngIf="item.children?.length">chevron_right</mat-icon>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main Content -->
+  <mat-sidenav-content>
+    <div class="content">
+      <button mat-icon-button (click)="toggleDrawer(drawer)">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <!-- Page Content Goes Here -->
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="sidebar-profile">
+    <img src="user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" (mouseover)="showSlideBar()"
+    (mouseout)="hideSlideBar()">
+    <div class="m-0">
+      <h5 class="mb-1 profile-name text-nowrap text-truncate">Nick Gonzalez</h5>
+      <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
+    </div>
+  </div>
+   -->
+   
+ 
+
+  
