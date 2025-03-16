@@ -1,33 +1,13 @@
-import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { SharedModule } from '../../core/shared-module/common-module';
 
 @Component({
   selector: 'app-header',
-  imports: [NgIf],
+  imports: [SharedModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  opened?: true;
-  toggleDrawer(event: any) {
-    event.toggle();
-  }
-
  
-
-
-  flagsVisible = false;
-
-  
-  showFlags() {
-   console.log('mouseenter');
-    this.flagsVisible = true;
-  }
-
-  
-  hideFlags() {
-    console.log('mouseleave');
-    this.flagsVisible = false;
-  }
 
 }

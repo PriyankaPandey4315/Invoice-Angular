@@ -1,22 +1,14 @@
-// import { NgModule } from '@angular/core';
-// import { MatSidenavModule } from '@angular/material/sidenav';
-// import { MatListModule } from '@angular/material/list';
-// import { MatIconModule } from '@angular/material/icon';
-// import { MatButtonModule } from '@angular/material/button';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { SharedModule } from './core/shared-module/common-module';
 
-// @NgModule({
-//   declarations: [],
-//   imports: [
-//     MatSidenavModule,
-//     MatListModule,
-//     MatIconModule,
-//     MatButtonModule
-//   ],
-//   exports: [
-//     MatSidenavModule,
-//     MatListModule,
-//     MatIconModule,
-//     MatButtonModule
-//   ]
-// })
-// export class AppModule {}
+@NgModule({
+  imports: [ 
+    SharedModule,
+    AppComponent, // ✅ Import standalone component directly
+    BrowserModule
+  ],
+  exports: []
+})
+export class AppModule {}
