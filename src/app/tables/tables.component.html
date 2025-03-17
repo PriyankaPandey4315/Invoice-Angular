@@ -1,4 +1,840 @@
-<li>
-    <i class="ri-table-line"></i>
-    <span class="menu-text">Tables</span>
-</li>
+<div class="app-container">
+
+    <!-- App hero header starts -->
+    <div class="app-hero-header d-flex align-items-center">
+
+      <!-- Breadcrumb starts -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <i class="ri-home-8-line lh-1 pe-3 me-3 border-end"></i>
+          <a href="/hospital-dashboard">Home</a>
+        </li>
+        <li class="breadcrumb-item text-primary" aria-current="page">
+          Tables
+        </li>
+      </ol>
+      <!-- Breadcrumb ends -->
+
+      <!-- Sales stats starts -->
+      <div class="ms-auto d-lg-flex d-none flex-row">
+        <div class="d-flex flex-row gap-1 day-sorting">
+          <button class="btn btn-sm btn-primary">Today</button>
+          <button class="btn btn-sm">7d</button>
+          <button class="btn btn-sm">2w</button>
+          <button class="btn btn-sm">1m</button>
+          <button class="btn btn-sm">3m</button>
+          <button class="btn btn-sm">6m</button>
+          <button class="btn btn-sm">1y</button>
+        </div>
+      </div>
+      <!-- Sales stats ends -->
+
+    </div>
+    <!-- App Hero header ends -->
+
+    <!-- App body starts -->
+    <div class="app-body">
+
+      <!-- Row starts -->
+      <div class="row gx-3">
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Table</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Module</th>
+                        <th>Reporter</th>
+                        <th>Status</th>
+                        <th>Owner</th>
+                        <th>Severity</th>
+                        <th>Created</th>
+                        <th>Updated</th>
+                        <th>Due</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>App crashes</td>
+                        <td>Main App</td>
+                        <td>Lewis</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">Open</span>
+                        </td>
+                        <td>Micheal</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">High</span>
+                        </td>
+                        <td>Mar-10, 2024</td>
+                        <td>Apr-14, 2024</td>
+                        <td>May-20, 2024</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Saving file</td>
+                        <td>Form Screen</td>
+                        <td>James</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">In Progress</span>
+                        </td>
+                        <td>Donald</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">Low</span>
+                        </td>
+                        <td>Mar-10, 2024</td>
+                        <td>Apr-14, 2024</td>
+                        <td>May-20, 2024</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Login fail</td>
+                        <td>Main App</td>
+                        <td>Powell</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">Open</span>
+                        </td>
+                        <td>Glory</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">High</span>
+                        </td>
+                        <td>Mar-10, 2024</td>
+                        <td>Apr-14, 2024</td>
+                        <td>May-20, 2024</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Saving file</td>
+                        <td>Form Screen</td>
+                        <td>James</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">In Progress</span>
+                        </td>
+                        <td>Donald</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">Low</span>
+                        </td>
+                        <td>Mar-10, 2024</td>
+                        <td>Apr-14, 2024</td>
+                        <td>May-20, 2024</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Login fail</td>
+                        <td>Main App</td>
+                        <td>Powell</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">In Progress</span>
+                        </td>
+                        <td>Glory</td>
+                        <td>
+                          <span class="badge border border-primary text-primary">High</span>
+                        </td>
+                        <td>Mar-10, 2024</td>
+                        <td>Apr-14, 2024</td>
+                        <td>May-20, 2024</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Default</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table truncate align-middle">
+                    <thead>
+                      <tr>
+                        <th width="30px">&nbsp;</th>
+                        <th width="60px">User</th>
+                        <th width="100px">Name</th>
+                        <th width="100px">"&#64;"</th>
+                        <th width="100px">Designation</th>
+                        <th width="100px">Views</th>
+                        <th width="100px">Projects</th>
+                        <th width="100px">Followers</th>
+                        <th width="100px">Reviews</th>
+                        <th width="100px">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="#" class="me-1 icon-box sm bg-light rounded-circle">
+                            <i class="ri-star-line lh-1"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <img src="assets/images/user2.png" alt="Bootstrap Themes" class="rounded-circle img-3x">
+                        </td>
+                        <td>Jill Dalton</td>
+                        <td>"&#64;"FreeDashboards</td>
+                        <td>Fashion Artist</td>
+                        <td>980</td>
+                        <td>
+                          <span class="badge bg-primary">9</span>
+                        </td>
+                        <td>600</td>
+                        <td>26</td>
+                        <td>
+                          <button class="btn btn-primary">Follow</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#" class="me-1 icon-box sm bg-light rounded-circle">
+                            <i class="ri-star-fill lh-1 text-warning"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <img src="assets/images/user3.png" alt="Bootstrap Themes" class="rounded-circle img-3x">
+                        </td>
+                        <td>Isabelle Lucero</td>
+                        <td>"&#64;"FreeDashboards</td>
+                        <td>UX Designer</td>
+                        <td>860</td>
+                        <td>
+                          <span class="badge bg-primary">9</span>
+                        </td>
+                        <td>900</td>
+                        <td>82</td>
+                        <td>
+                          <button class="btn btn-secondary">Following</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#" class="me-1 icon-box sm bg-light rounded-circle">
+                            <i class="ri-star-line lh-1"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <img src="assets/images/user4.png" alt="Bootstrap Themes" class="rounded-circle img-3x">
+                        </td>
+                        <td>Marcie Love</td>
+                        <td>"&#64;"FreeDashboards</td>
+                        <td>UI Developer</td>
+                        <td>660</td>
+                        <td>
+                          <span class="badge bg-primary">8</span>
+                        </td>
+                        <td>300</td>
+                        <td>23</td>
+                        <td>
+                          <button class="btn btn-primary">Follow</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#" class="me-1 icon-box sm bg-light rounded-circle">
+                            <i class="ri-star-fill lh-1 text-warning"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <img src="assets/images/user5.png" alt="Bootstrap Themes" class="rounded-circle img-3x">
+                        </td>
+                        <td>Autumn Green</td>
+                        <td>"&#64;"FreeDashboards</td>
+                        <td>Web Developer</td>
+                        <td>290</td>
+                        <td>
+                          <span class="badge bg-primary">6</span>
+                        </td>
+                        <td>760</td>
+                        <td>67</td>
+                        <td>
+                          <button class="btn btn-secondary">Following</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#" class="me-1 icon-box sm bg-light rounded-circle">
+                            <i class="ri-star-line lh-1"></i>
+                          </a>
+                        </td>
+                        <td>
+                          <img src="assets/images/user.png" alt="Bootstrap Themes" class="rounded-circle img-3x">
+                        </td>
+                        <td>Joann Howard</td>
+                        <td>"&#64;"FreeDashboards</td>
+                        <td>Admin</td>
+                        <td>775</td>
+                        <td>
+                          <span class="badge bg-primary">8</span>
+                        </td>
+                        <td>882</td>
+                        <td>88</td>
+                        <td>
+                          <button class="btn btn-primary">Follow</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Default</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table align-middle table-hover m-0 truncate">
+                    <thead>
+                      <tr>
+                        <th scope="col">Employee</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Start date</th>
+                        <th scope="col">Progress</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="rounded-circle img-3x me-2" src="assets/images/user.png"
+                            alt="Bootstrap Gallery">
+                        </td>
+                        <td>Developer</td>
+                        <td>3994 Grant View Drive, Muskego, 53150</td>
+                        <td>28</td>
+                        <td>28/10/2024</td>
+                        <td>
+                          <div class="progress small">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td>$92,000</td>
+                        <td>
+                          <a class="btn btn-info btn-sm" href="#"><i class="ri-mark-pen-line"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-circle img-3x me-2" src="assets/images/user2.png"
+                            alt="Bootstrap Gallery">
+                        </td>
+                        <td>Sales</td>
+                        <td>
+                          913 Alpaca Way, Garden Grove, California, 92643
+                        </td>
+                        <td>32</td>
+                        <td>30/10/2024</td>
+                        <td>
+                          <div class="progress small">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td>$86,000</td>
+                        <td>
+                          <a class="btn btn-danger btn-sm mb-1" href="#">
+                            <i class="ri-delete-bin-line"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-circle img-3x me-2" src="assets/images/user3.png"
+                            alt="Bootstrap Gallery">
+                        </td>
+                        <td>Developer</td>
+                        <td>
+                          2343 Burwell Heights Road, Nederland, Texas, 77627
+                        </td>
+                        <td>36</td>
+                        <td>16/04/2024</td>
+                        <td>
+                          <div class="progress small">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td>$78,000</td>
+                        <td>
+                          <a class="btn btn-info btn-sm" href="#"><i class="ri-mark-pen-line"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-circle img-3x me-2" src="assets/images/user4.png"
+                            alt="Bootstrap Gallery">
+                        </td>
+                        <td>Designer</td>
+                        <td>
+                          2127 Boone Crockett Lane, Seattle, Washington, 98109
+                        </td>
+                        <td>45</td>
+                        <td>21/04/2024</td>
+                        <td>
+                          <div class="progress small">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td>$65,000</td>
+                        <td>
+                          <a class="btn btn-danger btn-sm mb-1" href="#">
+                            <i class="ri-delete-bin-line"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Responsive</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Items Bought</th>
+                        <th>Money Spent</th>
+                        <th>Last Login</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#00001</td>
+                        <td><a href="#" class="text-primary">Alia</a></td>
+                        <td>Willams</td>
+                        <td>+143-148-60985</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>250</td>
+                        <td>$4500</td>
+                        <td>10/10/2024 4:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00002</td>
+                        <td><a href="#" class="text-primary">Nathan</a></td>
+                        <td>James</td>
+                        <td>+278-119-88790</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>390</td>
+                        <td>$3500</td>
+                        <td>12/10/2024 2:37am</td>
+                      </tr>
+                      <tr>
+                        <td>#00003</td>
+                        <td><a href="#" class="text-primary">Kelly</a></td>
+                        <td>Thomas</td>
+                        <td>+125-117-88763</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>135</td>
+                        <td>$2400</td>
+                        <td>14/10/2024 7:50pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00004</td>
+                        <td><a href="#" class="text-primary">Steve</a></td>
+                        <td>Smitth</td>
+                        <td>+334-676-66530</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>765</td>
+                        <td>$7890</td>
+                        <td>18/10/2024 9:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00005</td>
+                        <td><a href="#" class="text-primary">Kevin</a></td>
+                        <td>Oliver</td>
+                        <td>+435-667-99808</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>763</td>
+                        <td>$5690</td>
+                        <td>21/10/2024 3:20pm</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Table SM</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table table-sm truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Heading 1</th>
+                        <th>Heading 2</th>
+                        <th>Heading 3</th>
+                        <th>Heading 4</th>
+                        <th>Heading 5</th>
+                        <th>Heading 6</th>
+                        <th>Heading 7</th>
+                        <th>Heading 8</th>
+                        <th>Heading 9</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>001</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                      </tr>
+                      <tr>
+                        <td>003</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                      </tr>
+                      <tr>
+                        <td>004</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                      </tr>
+                      <tr>
+                        <td>005</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                        <td>Long text</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Table Striped</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table table-striped truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Items Bought</th>
+                        <th>Money Spent</th>
+                        <th>Last Login</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#00001</td>
+                        <td><a href="#" class="text-primary">Alia</a></td>
+                        <td>Willams</td>
+                        <td>+143-148-60985</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>250</td>
+                        <td>$4500</td>
+                        <td>10/10/2024 4:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00002</td>
+                        <td><a href="#" class="text-primary">Nathan</a></td>
+                        <td>James</td>
+                        <td>+278-119-88790</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>390</td>
+                        <td>$3500</td>
+                        <td>12/10/2024 2:37am</td>
+                      </tr>
+                      <tr>
+                        <td>#00003</td>
+                        <td><a href="#" class="text-primary">Kelly</a></td>
+                        <td>Thomas</td>
+                        <td>+125-117-88763</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>135</td>
+                        <td>$2400</td>
+                        <td>14/10/2024 7:50pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00004</td>
+                        <td><a href="#" class="text-primary">Steve</a></td>
+                        <td>Smitth</td>
+                        <td>+334-676-66530</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>765</td>
+                        <td>$7890</td>
+                        <td>18/10/2024 9:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00005</td>
+                        <td><a href="#" class="text-primary">Kevin</a></td>
+                        <td>Oliver</td>
+                        <td>+435-667-99808</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>763</td>
+                        <td>$5690</td>
+                        <td>21/10/2024 3:20pm</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="card-title">Table Bordered</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>Customer ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Items Bought</th>
+                        <th>Money Spent</th>
+                        <th>Last Login</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#00001</td>
+                        <td>Alia</td>
+                        <td>Willams</td>
+                        <td>+143-148-60985</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>250</td>
+                        <td>$4500</td>
+                        <td>10/10/2024 4:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00002</td>
+                        <td>Nathan</td>
+                        <td>James</td>
+                        <td>+278-119-88790</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>390</td>
+                        <td>$3500</td>
+                        <td>12/10/2024 2:37am</td>
+                      </tr>
+                      <tr>
+                        <td>#00003</td>
+                        <td>Kelly</td>
+                        <td>Thomas</td>
+                        <td>+125-117-88763</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>135</td>
+                        <td>$2400</td>
+                        <td>14/10/2024 7:50pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00004</td>
+                        <td>Steve</td>
+                        <td>Smitth</td>
+                        <td>+334-676-66530</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>765</td>
+                        <td>$7890</td>
+                        <td>18/10/2024 9:30pm</td>
+                      </tr>
+                      <tr>
+                        <td>#00005</td>
+                        <td>Kevin</td>
+                        <td>Oliver</td>
+                        <td>+435-667-99808</td>
+                        <td>info"&#64;"example.com</td>
+                        <td>763</td>
+                        <td>$5690</td>
+                        <td>21/10/2024 3:20pm</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">Table Icons</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table align-middle truncate m-0">
+                    <thead>
+                      <tr>
+                        <th>Country</th>
+                        <th>Languages</th>
+                        <th>Population</th>
+                        <th>Median Age</th>
+                        <th>Area (Km²)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src="assets/images/flags/1x1/hk.svg" class="img-shadow img-1xx me-2"
+                            alt="Hong Kong">Hong
+                          Kong
+                        </td>
+                        <td>Chinese (official), English</td>
+                        <td>7,39,000</td>
+                        <td>31.3</td>
+                        <td>1106</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="assets/images/flags/1x1/au.svg" class="img-shadow img-1xx me-2"
+                            alt="Australia">Australia
+                        </td>
+                        <td>English 79%, native and other languages</td>
+                        <td>23,630,169</td>
+                        <td>37.3</td>
+                        <td>7,739,983</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="assets/images/flags/1x1/tz.svg" class="img-shadow img-1xx me-2"
+                            alt="Tanzania">Tanzania
+                        </td>
+                        <td>
+                          Swahili (national), English, Arabic, Chaga,
+                          Makonde
+                        </td>
+                        <td>57,353,670</td>
+                        <td>39.1</td>
+                        <td>945,086</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="assets/images/flags/1x1/ru.svg" class="img-shadow img-1xx me-2"
+                            alt="Russia">Russia
+                        </td>
+                        <td>Russian, others</td>
+                        <td>142,467,651</td>
+                        <td>38.4</td>
+                        <td>17,076,310</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="assets/images/flags/1x1/de.svg" class="img-shadow img-1xx me-2"
+                            alt="Germany">Germany
+                        </td>
+                        <td>German, Danish, Low Rhenish, Romani</td>
+                        <td>82,081,261</td>
+                        <td>41.1</td>
+                        <td>357,386</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="5" class="text-center">
+                          Data retrieved from BootstrapGallery.
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row ends -->
+
+    </div>
+    <!-- App body ends -->
+
+    <!-- App footer starts -->
+    <div class="app-footer bg-white">
+      <span>© Medflex admin 2024</span>
+    </div>
+    <!-- App footer ends -->
+
+  </div>

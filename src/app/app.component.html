@@ -332,18 +332,18 @@
             
       
           <!-- Profile Section -->
-          <div class="profile">
-            <img src="assets/user.jpg" alt="Profile" class="profile-pic" />
-            <div class="profile-info">
-              <h3>Nick Gonzalez</h3>
-              <p>Dept Admin</p>
+          <div class="sidebar-profile">
+            <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
+            <div class="m-0">
+              <h5 class="mb-1 profile-name text-nowrap text-truncate">Nick Gonzalez</h5>
+              <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
             </div>
           </div>
       
           <!-- Menu Items -->
           <mat-nav-list>
             <a mat-list-item *ngFor="let item of menuItems" (click)="onMenuItemClick(item)" style="display: flex; align-items: center;">
-              <i [className]="item.icon" style="margin-right: 6px;"></i>
+              <i [className]="item.icon" style="margin-right: 12px;"></i>
               <span>{{ item.label }}</span>
               <span style="position: relative; margin-left: auto;">
                 <mat-icon *ngIf="item.children?.length" style="position: absolute; top: -3px;">chevron_right</mat-icon>
@@ -371,6 +371,7 @@
         </mat-sidenav-content>
       </mat-sidenav-container>
 
+      
 
 </div>
 

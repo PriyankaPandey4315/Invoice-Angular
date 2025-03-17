@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './news-updates.component.css'
 })
 export class NewsUpdatesComponent {
+onClick(){
+console.log('clicked')
+}
 
 }
