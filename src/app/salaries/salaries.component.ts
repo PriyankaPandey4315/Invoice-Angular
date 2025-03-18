@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-salaries',
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './salaries.component.html',
   styleUrl: './salaries.component.css'
 })

@@ -1,6 +1,20 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-hotel-bed-line"></i>
-      <span class="menu-text">Rooms</span>
-    </a>
-</li>
+<div class="rooms-wrapper">
+    <div class="sidebar">
+      <a routerLink="statistics" routerLinkActive="active"></a>
+      <a routerLink="rooms-alloted" routerLinkActive="active"></a>
+      <a routerLink="rooms-by-department" routerLinkActive="active"></a>
+      <a routerLink="available-rooms" routerLinkActive="active"></a>
+      <a routerLink="book-room" routerLinkActive="active"></a>
+      <a routerLink="add-room" routerLinkActive="active"></a>
+      <a routerLink="edit-room" routerLinkActive="active"></a>
+
+     
+  
+  
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

@@ -71,6 +71,9 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     border-radius: 50%;
     margin-right: 12px;
   }
+  mat-sidenav{
+    width: 250px;
+  }
   
   mat-nav-list {
     padding: 0;
@@ -79,9 +82,9 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   mat-list-item {
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 4px;
     transition: background-color 0.3s;
-    border-radius: 8px;
+    background-color: #1976d2;
   }
   
   mat-list-item mat-icon {
@@ -92,11 +95,26 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     background-color: #e0e0e0;
     cursor: pointer;
   }
+  mat-list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
   
+  .child-item.active {
+  background-color: #ffff;
+}
   .content {
     padding: 16px;
     display: flex;
     justify-content: ce;
   }
-  
- 
+
+  app-footer{
+    position: fixed;
+    bottom: 0;
+  left: 0;
+    height: 100px;
+    width: 100%;
+    border-radius: 2px;
+  }

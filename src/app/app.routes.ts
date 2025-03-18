@@ -74,7 +74,6 @@ import { UiElementsComponent } from './ui-elements/ui-elements.component';
 import { AlertsComponent } from './ui-elements/alerts/alerts.component';
 import { AvatarsComponent } from './ui-elements/avatars/avatars.component';
 import { BadgesComponent } from './ui-elements/badges/badges.component';
-import { ButtonsComponent } from './buttons/buttons.component';
 import { ButtonGroupComponent } from './ui-elements/button-group/button-group.component';
 import { CardsComponent } from './ui-elements/cards/cards.component';
 import { AdvancedCardsComponent } from './ui-elements/advanced-cards/advanced-cards.component';
@@ -112,6 +111,8 @@ import { LevelTwoLinkComponent } from './menu-level/level-one-menu/level-two-lin
 import { LevelTwoMenuComponent } from './menu-level/level-one-menu/level-two-menu/level-two-menu.component';
 import { LevelThreeLinkComponent } from './menu-level/level-one-menu/level-two-menu/level-three-link/level-three-link.component';
 import { ValidationsComponent } from './forms/validations/validations.component';
+import { DoctorsCardsComponent } from './doctors/doctors-cards/doctors-cards.component';
+import { ButtonsComponent } from './ui-elements/buttons/buttons.component';
 
 export const routes: Routes = [
   {
@@ -135,27 +136,27 @@ export const routes: Routes = [
     component: DoctorsComponent,
     children: [
         {
-            path:'doctors/doctors-dashboard', 
+            path:'doctors-dashboard', 
             component: DoctorsDashboardComponent
         },
         {
-            path:'doctors/doctors-dashboard', 
-            component: DoctorsDashboardComponent
-        },
-        {
-            path:'doctors/doctors-list', 
+            path:'doctors-list', 
             component: DoctorsListComponent
         },
         {
-            path:'doctors/doctors-profiles', 
+          path:'doctors-cards', 
+          component: DoctorsCardsComponent
+      },
+        {
+            path:'doctors-profile', 
             component: DoctorsProfileComponent
         },
         {
-            path:'doctors/add-doctor', 
+            path:'add-doctor', 
             component: AddDoctorComponent
         },
         {
-            path:'doctors/edit-doctor', 
+            path:'edit-doctor', 
             component: EditDoctorComponent
         },
 
@@ -166,19 +167,19 @@ export const routes: Routes = [
     component: PatientsComponent,
     children:[
         {
-            path:'patients/patients-dashboard', 
+            path:'patients-dashboard', 
             component: PatientsDashboardComponent
         },
         {
-            path:'patients/patients-list', 
+            path:'patients-list', 
             component: PatientsListComponent
         },
         {
-            path:'patients/add-patients', 
+            path:'add-patients', 
             component: AddPatientsComponent
         },
         {
-            path:'patients/edit-patients-details', 
+            path:'edit-patients-details', 
             component: EditPatientsDetailsComponent
         },
     ],
@@ -189,15 +190,15 @@ export const routes: Routes = [
     component: StaffComponent,
     children:[
         {
-            path:'staff/staff-list',
+            path:'staff-list',
             component:StaffListComponent
         },
         {
-            path:'staff/add-staff',
+            path:'add-staff',
             component:AddStaffComponent
         },
         {
-            path:'staff/edit-staff-detail',
+            path:'edit-staff-detail',
             component:EditStaffDetailComponent
         },
     ],
@@ -207,19 +208,19 @@ export const routes: Routes = [
     component: AppointmentsComponent,
     children:[
         {
-            path:'appointments/appointments1',
+            path:'appointments1',
             component:Appointments1Component
         },
         {
-            path:'appointments/appointments-list',
+            path:'appointments-list',
             component:AppointmentsListComponent
         },
         {
-            path:'appointments/book-appointment',
+            path:'book-appointment',
             component:BookAppointmentComponent
         },
         {
-            path:'appointments/edit-appointment',
+            path:'edit-appointment',
             component:EditAppointmentComponent
         },
     ],
@@ -229,15 +230,15 @@ export const routes: Routes = [
     component: DepartmentsComponent,
     children:[
         {
-            path:  'departments/department-list',
+            path:  'department-list',
             component: DepartmentListComponent
           },
         {
-            path:  'departments/add-department',
+            path:  'add-department',
             component: AddDepartmentComponent
           },
         {
-            path:  'departments/edit-department',
+            path:  'edit-department',
             component: EditDepartmentComponent
           },
     ],
@@ -247,27 +248,27 @@ export const routes: Routes = [
     component: AccountsComponent,
     children:[
         {
-            path:  'accounts/income',
+            path:  'income',
             component: IncomeComponent
           },
         {
-            path:  'accounts/payment',
+            path:  'payment',
             component: PaymentComponent
           },
         {
-            path:  'accounts/invoices',
+            path:  'invoices',
             component: InvoicesComponent
           },
         {
-            path:  'accounts/invoice-detail',
+            path:  'invoice-detail',
             component: InvoiceDetailComponent
           },
         {
-            path:  'accounts/create-invoice',
+            path:  'create-invoice',
             component: CreateInvoiceComponent
           },
         {
-            path:  'accounts/expenses',
+            path:  'expenses',
             component: ExpensesComponent
           },
     ],
@@ -277,19 +278,19 @@ export const routes: Routes = [
     component: HumanResourcesComponent,
     children:[
         {
-            path:  'human-resources/hr-approvals',
+            path:  'hr-approvals',
             component: HrApprovalsComponent
           },
         {
-            path:  'human-resources/attendance',
+            path:  'attendance',
             component: AttendanceComponent
           },
         {
-            path:  'human-resources/staff-leaves',
+            path:  'staff-leaves',
             component: StaffLeavesComponent
           },
         {
-            path:  'human-resources/holidays',
+            path:  'holidays',
             component: HolidaysComponent
           },
     ],
@@ -299,11 +300,11 @@ export const routes: Routes = [
     component: SalariesComponent,
     children:[
         {
-            path:  'salaries/salary-list',
+            path:  'salary-list',
             component: SalaryListComponent
           },
           {
-            path:  'salaries/payslip',
+            path:  'payslip',
             component: PayslipComponent
           },
     ],
@@ -313,31 +314,31 @@ export const routes: Routes = [
     component: RoomsComponent,
     children:[
         {
-            path:  'rooms/statistics',
+            path:  'statistics',
             component: StatisticsComponent
           },
         {
-            path:  'rooms/rooms-alloted',
+            path:  'rooms-alloted',
             component: RoomsAllotedComponent
           },
         {
-            path:  'rooms/rooms-by-department',
+            path:  'rooms-by-department',
             component: RoomsByDepartmentComponent
           },
         {
-            path:  'rooms/available-rooms',
+            path:  'available-rooms',
             component: AvailableRoomsComponent
           },
         {
-            path:  'rooms/book-room',
+            path:  'book-room',
             component: BookRoomComponent
           },
         {
-            path:  'rooms/add-room',
+            path:  'add-room',
             component: AddRoomComponent
           },
         {
-            path:  'rooms/edit-room',
+            path:  'edit-room',
             component: EditRoomComponent
           },
     ],
@@ -347,19 +348,19 @@ export const routes: Routes = [
     component: AmbulanceComponent,
     children:[
         {
-            path:  'ambulance/ambulance-list',
+            path:  'ambulance-list',
             component: AmbulanceListComponent
           },
           {
-            path:  'ambulance/add-ambulance',
+            path:  'add-ambulance',
             component: AddAmbulanceComponent
           },
         {
-            path:  'ambulance/edit-ambulance',
+            path:  'edit-ambulance',
             component: EditAmbulanceComponent
           },
           {
-            path:  'ambulance/ambulance-call-list',
+            path:  'ambulance-call-list',
             component: AmbulanceCallListComponent
           },
     ],
@@ -381,81 +382,81 @@ export const routes: Routes = [
     component: UiElementsComponent,
     children:[
         {
-            path:  'ui-elements/alerts',
+            path:  'alerts',
             component: AlertsComponent
           },
         {
-            path:  'ui-elements/avatars',
+            path:  'avatars',
             component: AvatarsComponent
           },
         {
-            path:  'ui-elements/badges',
+            path:  'badges',
             component: BadgesComponent
           },
         {
-            path:  'ui-elements/buttons',
+            path:  'buttons',
             component: ButtonsComponent
           },
         {
-            path:  'ui-elements/button-group',
+            path:  'button-group',
             component: ButtonGroupComponent
           },
         {
-            path:  'ui-elements/cards',
+            path:  'cards',
             component: CardsComponent
           },
         {
-            path:  'ui-elements/advanced-cards',
+            path:  'advanced-cards',
             component: AdvancedCardsComponent
           },
           {
-            path:  'ui-elements/dropdowns',
+            path:  'dropdowns',
             component: DropdownsComponent
           },
         {
-            path:  'ui-elements/list-items',
+            path:  'list-items',
             component: ListItemsComponent
           },
         {
-            path:  'ui-elements/progress-bars',
+            path:  'progress-bars',
             component: ProgressBarsComponent
           },
         {
-            path:  'ui-elements/placeholders',
+            path:  'placeholders',
             component: PlaceholdersComponent
           },
         {
-            path:  'ui-elements/spinners',
+            path:  'spinners',
             component: SpinnersComponent
           },
     ],
   },
   {
-    path:  'jquery-elements',
+    path:  'jquery-components',
     component: JqueryComponentsComponent,
     children:[
         {
-            path:  'jquery-elements/accordions',
+            path:  'accordions',
             component: AccordionsComponent
           },
         {
-            path:  'jquery-elements/carousel',
+            path:  'carousel',
             component: CarouselComponent
           },
         {
-            path:  'jquery-elements/modals',
+            path:  'modals',
             component: ModalsComponent
           },
         {
-            path:  'jquery-elements/popovers',
+            path:  'popovers',
             component: PopoversComponent
           },
         {
-            path:  'jquery-elements/tabs',
+            path:  'tabs',
             component: TabsComponent
           },
         {
-            path:  'jquery-elements/tool-tips',
+            path:  'tooltips',
             component: TooltipsComponent
           },
     ],
@@ -465,31 +466,31 @@ export const routes: Routes = [
     component: FormsComponent,
     children:[
         {
-            path:  'forms/form-inputs',
+            path:  'form-inputs',
             component: FormInputsComponent
           },
         {
-            path:  'forms/checkbox-radio',
+            path:  'checkbox-radio',
             component: CheckboxRadioComponent
           },
         {
-            path:  'forms/file-input',
+            path:  'file-input',
             component: FileInputComponent
           },
         {
-            path:  'forms/validations',
+            path:  'validations',
             component: ValidationsComponent
           },
         {
-            path:  'forms/datetime-pickers',
+            path:  'datetime-pickers',
             component: DatetimePickersComponent
           },
         {
-            path:  'forms/input-masks',
+            path:  'input-masks',
             component: InputMasksComponent
           },
           {
-            path:  'forms/input-tags',
+            path:  'input-tags',
             component: InputTagsComponent
           },
     ],
@@ -503,11 +504,11 @@ export const routes: Routes = [
     component: GraphsComponent,
     children:[
         {
-            path:  'graphs/apex-graphs',
+            path:  'apex',
             component: ApexGraphsComponent
           },
           {
-            path:  'graphs/morris-graphs',
+            path:  'morris',
             component: MorrisGraphsComponent
           },
     ],
@@ -533,19 +534,19 @@ export const routes: Routes = [
     component: LoginSignupComponent,
     children:[
         {
-            path:  'login-signup/login',
+            path:  'login',
             component: LoginComponent
           },
           {
-            path:  'login-signup/signup',
+            path:  'signup',
             component: SignupComponent
           },
         {
-            path:  'login-signup/forgot-password',
+            path:  'forgot-password',
             component: ForgotPasswordComponent
           },
           {
-            path:  'login-signup/reset-password',
+            path:  'reset-password',
             component: ResetPasswordComponent
           },
     ],
@@ -563,23 +564,23 @@ export const routes: Routes = [
     component: MenuLevelComponent,
     children:[
         {
-            path:  'menu-level/level-one-link',
+            path:  'level-one-link',
             component: LevelOneLinkComponent
           },
           {
-            path:  'menu-level/level-one-menu',
+            path:  'level-one-menu',
             component: LevelOneMenuComponent,
             children:[
                 {
-                    path:  'menu-level/level-one-menu/level-two-link',
+                    path:  'level-two-link',
                     component: LevelTwoLinkComponent
                   },
                   {
-                    path:  'menu-level/level-one-menu/level-two-menu',
+                    path:  'level-two-menu',
                     component: LevelTwoMenuComponent,
                     children:[
                         {
-                            path:  'menu-level/level-one-menu/level-two-menu',
+                            path:  'level-three-link',
                             component: LevelThreeLinkComponent
                           },
                     ],

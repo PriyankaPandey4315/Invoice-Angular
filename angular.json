@@ -133,42 +133,27 @@
               "src/assets/vendor/input-masks/cleave-custom.js",
               "src/assets/vendor/apex/custom/graphs/area.js",
               "src/assets/vendor/apex/custom/graphs/line.js",
-    "src/assets/vendor/apex/custom/graphs/bar.js",
-    "src/assets/vendor/apex/custom/graphs/column-area.js",
-    "src/assets/vendor/apex/custom/graphs/candlestick.js",
+              "src/assets/vendor/apex/custom/graphs/bar.js",
+              "src/assets/vendor/apex/custom/graphs/column-area.js",
+              "src/assets/vendor/apex/custom/graphs/candlestick.js",
+              "src/assets/vendor/apex/custom/graphs/heatmap.js",
+              "src/assets/vendor/apex/custom/graphs/donut.js",
+              "src/assets/vendor/apex/custom/graphs/pie.js",
+              "src/assets/vendor/apex/custom/graphs/gauge.js",
+              "src/assets/vendor/apex/custom/graphs/radial-bar.js",
+              "src/assets/vendor/apex/custom/graphs/funnel.js",
+              "src/assets/vendor/apex/custom/graphs/pyramid.js",
+              "src/assets/vendor/morris/raphael-min.js",
+              "src/assets/vendor/morris/morris.min.js",
+              "src/assets/vendor/morris/custom/area.js",
+              "src/assets/vendor/morris/custom/barColors.js",
+              "src/assets/vendor/morris/custom/dayData.js",
+              "src/assets/vendor/morris/custom/donutColors.js",
+              "src/assets/vendor/morris/custom/donutFormatter.js",
+              "src/assets/vendor/morris/custom/morrisBar.js",
+              "src/assets/vendor/morris/custom/negativeValues.js",
+              "src/assets/vendor/morris/custom/stackedBar.js"
     
-    "src/assets/vendor/apex/custom/graphs/heatmap.js",
-    
-    "src/assets/vendor/apex/custom/graphs/donut.js",
-    
-    "src/assets/vendor/apex/custom/graphs/pie.js",
-    
-    "src/assets/vendor/apex/custom/graphs/gauge.js",
-    
-    "src/assets/vendor/apex/custom/graphs/radial-bar.js",
-    
-    "src/assets/vendor/apex/custom/graphs/funnel.js",
-    
-    "src/assets/vendor/apex/custom/graphs/pyramid.js",
-    "src/assets/vendor/morris/raphael-min.js",
-    
-    "src/assets/vendor/morris/morris.min.js",
-    
-    "src/assets/vendor/morris/custom/area.js",
-    
-    "src/assets/vendor/morris/custom/barColors.js",
-    
-    "src/assets/vendor/morris/custom/dayData.js",
-    
-    "src/assets/vendor/morris/custom/donutColors.js",
-    
-    "src/assets/vendor/morris/custom/donutFormatter.js",
-    
-    "src/assets/vendor/morris/custom/morrisBar.js",
-    
-    "src/assets/vendor/morris/custom/negativeValues.js",
-    
-    "src/assets/vendor/morris/custom/stackedBar.js"
 
 
 

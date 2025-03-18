@@ -1,7 +1,14 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-building-2-line"></i>
-      <span class="menu-text">Departments</span>
-    </a>
-    </li>
-    
+<div class="deaprtment-wrapper">
+    <div class="sidebar">
+      <a routerLink="list" routerLinkActive="active"></a>
+      <a routerLink="add" routerLinkActive="active"></a>
+      <a routerLink="edit" routerLinkActive="active"></a>
+  
+  
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

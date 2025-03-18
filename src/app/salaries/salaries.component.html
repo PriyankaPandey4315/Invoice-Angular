@@ -1,6 +1,14 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-money-dollar-circle-line"></i>
-      <span class="menu-text">Salaries</span>
-    </a>
-</li>
+<div class="salaries-wrapper">
+    <div class="sidebar">
+      <a routerLink="salary-list" routerLinkActive="active"></a>
+      <a routerLink="payslip" routerLinkActive="active"></a>
+     
+  
+  
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

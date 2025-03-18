@@ -1,6 +1,14 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-car-washing-line"></i>
-      <span class="menu-text">Ambulance</span>
-    </a>
-</li>
+<div class="ambulance-wrapper">
+    <div class="sidebar">
+      <a routerLink="list" routerLinkActive="active"></a>
+      <a routerLink="add" routerLinkActive="active"></a>
+      <a routerLink="edit" routerLinkActive="active"></a>
+      <a routerLink="call-list" routerLinkActive="active"></a>
+  
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
