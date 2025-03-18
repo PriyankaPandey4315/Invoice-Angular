@@ -1,6 +1,15 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-dossier-line"></i>
-      <span class="menu-text">Appointments</span>
-    </a>
-</li>
+<div class="appointment-wrapper">
+    <div class="sidebar">
+      <a routerLink="list" routerLinkActive="active"></a>
+      <a routerLink="book" routerLinkActive="active"></a>
+      <a routerLink="add" routerLinkActive="active"></a>
+      <a routerLink="edit" routerLinkActive="active"></a>
+  
+  
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

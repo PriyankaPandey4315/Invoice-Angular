@@ -253,7 +253,7 @@
                         <!-- Messages list starts -->
                         <div class="p-3">
                             <div class="d-flex py-2">
-                                <img src="asset/suser3.png" class="img-shadow img-3x me-3 rounded-5"
+                                <img src="user3.png" class="img-shadow img-3x me-3 rounded-5"
                                     alt="Hospital Admin Templates">
                                 <div class="m-0">
                                     <h6 class="mb-1 fw-semibold">Nick Gonzalez</h6>
@@ -323,54 +323,61 @@
 </div>
 
         <!-- Header user settings ends -->
+     
+
 <div style="height: 100vh;">
     <mat-sidenav-container class="sidenav-container">
-        <!-- Sidebar Drawer -->
-        <mat-sidenav #drawer mode="side" [(opened)]="isOpen" class="sidenav">
-          <!-- Header -->
-        
-            
+        <!-- Drawer -->
+        <mat-sidenav #drawer mode="side" opened>
+            <div class="sidebar-profile">
+                <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
+                <div class="m-0">
+                  <h5 class="mb-1 profile-name text-nowrap text-truncate">Nick Gonzalez</h5>
+                  <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
+                </div>
+              </div>
+    
       
-          <!-- Profile Section -->
-          <div class="sidebar-profile">
-            <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
-            <div class="m-0">
-              <h5 class="mb-1 profile-name text-nowrap text-truncate">Nick Gonzalez</h5>
-              <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
-            </div>
-          </div>
-      
-          <!-- Menu Items -->
           <mat-nav-list>
-            <a mat-list-item *ngFor="let item of menuItems" (click)="onMenuItemClick(item)" style="display: flex; align-items: center;">
-              <i [className]="item.icon" style="margin-right: 12px;"></i>
-              <span>{{ item.label }}</span>
-              <span style="position: relative; margin-left: auto;">
-                <mat-icon *ngIf="item.children?.length" style="position: absolute; top: -3px;">chevron_right</mat-icon>
-              </span>
-          
-              <!-- Nested menu -->
-              <!-- <mat-nav-list *ngIf="item.children?.length">
-                <a mat-list-item *ngFor="let child of item.children" (click)="onMenuItemClick(child)" style="display: flex; align-items: center; padding-left: 20px;">
+            <ng-container *ngFor="let item of menuItems">
+              <!-- Parent Item -->
+              <a mat-list-item (click)="onMenuItemClick(item)" [ngClass]="{'active': item.isOpen}" [routerLink]="item.path"
+              routerLinkActive="active">
+                <i [className]="item.icon" style="margin-right: 12px;"></i>
+                <span>{{ item.label }}</span>
+      
+                <!-- Toggle Icon for Dropdown -->
+                <mat-icon *ngIf="item.children?.length" (click)="toggleDropdown(item); $event.stopPropagation()" style="position: absolute; top: 11px;
+    right: 10px;">
+                  {{ item.isOpen ? 'expand_less' : 'chevron_right' }}
+                </mat-icon>
+              </a>
+      
+              <!-- Child Items (Dropdown) -->
+              <div *ngIf="item.isOpen" class="dropdown-content">
+                <a
+                  mat-list-item
+                  *ngFor="let child of item.children"
+                  (click)="onMenuItemClick(child)"
+                  class="child-item" [routerLink]="item.path"
+                  routerLinkActive="active">
                   <i [className]="child.icon" style="margin-right: 6px;"></i>
-                  <span>{{ child.label }}</span>
+                  {{ child.label }}
                 </a>
-              </mat-nav-list> -->
-            </a>
+              </div>
+            </ng-container>
           </mat-nav-list>
-          
+
+
+          <app-footer/>
+
         </mat-sidenav>
       
         <!-- Main Content -->
-        <mat-sidenav-content>
-          <div class="content">
-           <router-outlet></router-outlet>
-           
-            <!-- Page Content Goes Here -->
-          </div>
-        </mat-sidenav-content>
+        
+            
+            <router-outlet></router-outlet>
       </mat-sidenav-container>
-
       
 
 </div>

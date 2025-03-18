@@ -123,52 +123,37 @@
               "src/assets/vendor/apex/custom/expenses/expenses.js",
               "src/assets/vendor/calendar/custom/google-view-calendar.js",
               "src/assets/vendor/month/month.js",
-              "assets/vendor/apex/custom/rooms/admissions.js",
-              "assets/js/validations.js",
-              "assets/vendor/input-tags/tagsinput.min.js",
-              "assets/vendor/input-tags/typeahead.js",
-              "assets/vendor/input-tags/tagsinput-custom.js",
-              "assets/vendor/input-masks/cleave.min.js",
-              "assets/vendor/input-masks/cleave-phone.js",
-              "assets/vendor/input-masks/cleave-custom.js",
-              "assets/vendor/apex/custom/graphs/area.js",
-              "assets/vendor/apex/custom/graphs/line.js",
-    "assets/vendor/apex/custom/graphs/bar.js",
-    "assets/vendor/apex/custom/graphs/column-area.js",
-    "assets/vendor/apex/custom/graphs/candlestick.js",
+              "src/assets/vendor/apex/custom/rooms/admissions.js",
+              "src/assets/js/validations.js",
+              "src/assets/vendor/input-tags/tagsinput.min.js",
+              "src/assets/vendor/input-tags/typeahead.js",
+              "src/assets/vendor/input-tags/tagsinput-custom.js",
+              "src/assets/vendor/input-masks/cleave.min.js",
+              "src/assets/vendor/input-masks/cleave-phone.js",
+              "src/assets/vendor/input-masks/cleave-custom.js",
+              "src/assets/vendor/apex/custom/graphs/area.js",
+              "src/assets/vendor/apex/custom/graphs/line.js",
+              "src/assets/vendor/apex/custom/graphs/bar.js",
+              "src/assets/vendor/apex/custom/graphs/column-area.js",
+              "src/assets/vendor/apex/custom/graphs/candlestick.js",
+              "src/assets/vendor/apex/custom/graphs/heatmap.js",
+              "src/assets/vendor/apex/custom/graphs/donut.js",
+              "src/assets/vendor/apex/custom/graphs/pie.js",
+              "src/assets/vendor/apex/custom/graphs/gauge.js",
+              "src/assets/vendor/apex/custom/graphs/radial-bar.js",
+              "src/assets/vendor/apex/custom/graphs/funnel.js",
+              "src/assets/vendor/apex/custom/graphs/pyramid.js",
+              "src/assets/vendor/morris/raphael-min.js",
+              "src/assets/vendor/morris/morris.min.js",
+              "src/assets/vendor/morris/custom/area.js",
+              "src/assets/vendor/morris/custom/barColors.js",
+              "src/assets/vendor/morris/custom/dayData.js",
+              "src/assets/vendor/morris/custom/donutColors.js",
+              "src/assets/vendor/morris/custom/donutFormatter.js",
+              "src/assets/vendor/morris/custom/morrisBar.js",
+              "src/assets/vendor/morris/custom/negativeValues.js",
+              "src/assets/vendor/morris/custom/stackedBar.js"
     
-    "assets/vendor/apex/custom/graphs/heatmap.js",
-    
-    "assets/vendor/apex/custom/graphs/donut.js",
-    
-    "assets/vendor/apex/custom/graphs/pie.js",
-    
-    "assets/vendor/apex/custom/graphs/gauge.js",
-    
-    "assets/vendor/apex/custom/graphs/radial-bar.js",
-    
-    "assets/vendor/apex/custom/graphs/funnel.js",
-    
-    "assets/vendor/apex/custom/graphs/pyramid.js",
-    "assets/vendor/morris/raphael-min.js",
-    
-    "assets/vendor/morris/morris.min.js",
-    
-    "assets/vendor/morris/custom/area.js",
-    
-    "assets/vendor/morris/custom/barColors.js",
-    
-    "assets/vendor/morris/custom/dayData.js",
-    
-    "assets/vendor/morris/custom/donutColors.js",
-    
-    "assets/vendor/morris/custom/donutFormatter.js",
-    
-    "assets/vendor/morris/custom/morrisBar.js",
-    
-    "assets/vendor/morris/custom/negativeValues.js",
-    
-    "assets/vendor/morris/custom/stackedBar.js",
 
 
 

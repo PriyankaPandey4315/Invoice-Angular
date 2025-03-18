@@ -3,5 +3,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatMenuModule } from '@angular/material/menu';
 
-export const SharedModule = [CommonModule,MatSidenavModule,MatListModule, MatIconModule, MatButtonModule]
+export const SharedModule = [CommonModule,MatSidenavModule,MatListModule, MatIconModule, MatButtonModule, MatMenuModule]

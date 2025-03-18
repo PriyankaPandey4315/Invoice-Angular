@@ -1,6 +1,15 @@
-<li class="treeview active current-page">
-    <a href="#!">
-      <i class="ri-notification-badge-line"></i>
-      <span class="menu-text">Jquery Components</span>
-    </a>
-</li>
+<div class="jquery-wrapper">
+    <div class="sidebar">
+      <a routerLink="accordions" routerLinkActive="active"></a>
+      <a routerLink="carousel" routerLinkActive="active"></a>
+      <a routerLink="modals" routerLinkActive="active"></a>
+      <a routerLink="popovers" routerLinkActive="active"></a>
+      <a routerLink="tabs" routerLinkActive="active"></a>
+      <a routerLink="tooltips" routerLinkActive="active"></a>
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

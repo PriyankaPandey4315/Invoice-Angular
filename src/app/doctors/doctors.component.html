@@ -1,6 +1,15 @@
-<li class="treeview">
-    <a href="#!">
-      <i class="ri-stethoscope-line"></i>
-      <span class="menu-text">Doctors</span>
-    </a>
-</li>
+<div class="doctors-wrapper">
+  <div class="sidebar">
+    <a routerLink="dashboard" routerLinkActive="active"></a>
+    <a routerLink="list" routerLinkActive="active"></a>
+    <a routerLink="cards" routerLinkActive="active"></a>
+    <a routerLink="doctors-profile" routerLinkActive="active"></a>
+    <a routerLink="add-doctor" routerLinkActive="active"></a>
+    <a routerLink="edit-doctor" routerLinkActive="active"></a>
+
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
