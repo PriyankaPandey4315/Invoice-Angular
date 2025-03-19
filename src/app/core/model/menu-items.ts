@@ -93,9 +93,9 @@ export const MenuItems=[
     {icon:'ri-terminal-window-line', label:'Forms', path:'/forms',isOpen: false,  children:[
       {icon:'', label:'Form Inputs', path:'/forms/form-inputs'},
       {icon:'', label:'Checkbox & Radio', path:'/forms/checkbox-radio'},
-      {icon:'', label:'File Inputs', path:'/forms/file-inputs'},
+      {icon:'', label:'File Inputs', path:'/forms/file-input'},
       {icon:'', label:'Validations', path:'/forms/validations'},      
-      {icon:'', label:'Date Time Pickers', path:'/forms/date-time-pickers'},
+      {icon:'', label:'Date Time Pickers', path:'/forms/datetime-pickers'},
       {icon:'', label:'Input Masks', path:'/forms/input-masks'},
       {icon:'', label:'Input Tags', path:'/forms/input-tags'},
     ]},
@@ -119,9 +119,9 @@ export const MenuItems=[
     {icon:'ri-dropdown-list', label:'Menu Level', path:'/menu-level',isOpen: false,  children:[
       {icon:'', label:'Level One Link', path:'/menu-level/level-one-link'},
       {icon:'', label:'Level One Menu', path:'/menu-level/level-one-menu', isOpen: false, children:[
-        {icon:'', label:'Level Two Link', path:'/menu-level/level-two-menu/level-two-link'},
+        {icon:'', label:'Level Two Link', path:'/menu-level/level-one-menu/level-two-link'},
         {icon:'', label:'Level Two Menu', path:'/menu-level/level-one-menu/level-two-menu',isOpen: false,  children:[
-          {icon:'', label:'Level Three Link', path:'/menu-level/level-one-menu/leveltwo-menu'},
+          {icon:'', label:'Level Three Link', path:'/menu-level/level-one-menu/level-two-menu/level-three-link'},
         ]},
 
       ]},

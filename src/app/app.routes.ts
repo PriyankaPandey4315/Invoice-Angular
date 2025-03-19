@@ -135,6 +135,7 @@ export const routes: Routes = [
     path:  'doctors',
     component: DoctorsComponent,
     children: [
+      
         {
             path:'doctors-dashboard', 
             component: DoctorsDashboardComponent
@@ -504,11 +505,11 @@ export const routes: Routes = [
     component: GraphsComponent,
     children:[
         {
-            path:  'apex',
+            path:  'apex-graphs',
             component: ApexGraphsComponent
           },
           {
-            path:  'morris',
+            path:  'morris-graphs',
             component: MorrisGraphsComponent
           },
     ],
@@ -564,23 +565,23 @@ export const routes: Routes = [
     component: MenuLevelComponent,
     children:[
         {
-            path:  'level-one-link',
+            path:  'one-link',
             component: LevelOneLinkComponent
           },
           {
-            path:  'level-one-menu',
+            path:  'one-menu',
             component: LevelOneMenuComponent,
             children:[
                 {
-                    path:  'level-two-link',
+                    path:  'two-link',
                     component: LevelTwoLinkComponent
                   },
                   {
-                    path:  'level-two-menu',
+                    path:  'two-menu',
                     component: LevelTwoMenuComponent,
                     children:[
                         {
-                            path:  'level-three-link',
+                            path:  'three-link',
                             component: LevelThreeLinkComponent
                           },
                     ],

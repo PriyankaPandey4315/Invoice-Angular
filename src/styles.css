@@ -1,3 +1,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.app-hero-header{
+     position: fixed; 
+     width: 85%;
+     height: 50px;
+}
+.ms-auto{
+     position: absolute;
+     left: 75%;
+}

@@ -30,25 +30,25 @@
                     <div class="icon-container">
                         <i class="icon-list"></i>
                         <span class="badge yellow"></span>
-                    <img src="flags/fr.svg" class="header-country-flag" alt="Bootstrap Dashboards" (mouseover)="showFlags()"
-                        (mouseout)="hideFlags()" id="fr-flag">
+                    <img src="flags/fr.svg" class="header-country-flag" alt="Bootstrap Dashboards" 
+                        id="fr-flag" >
                         </div>
-                <div class="dropdown-menu dropdown-menu-end dropdown-mini">
-                    <div class="country-container">
+                <div class="dropdown-menu dropdown-menu-end dropdown-mini" >
+                    <div class="country-container" >
     
-                        <img src="flags/us.svg" alt="Admin Panel" *ngIf="flagsVisible">
-    
-    
-                        <img src="flags/in.svg" alt="Admin Panels" *ngIf="flagsVisible">
+                        <img src="flags/us.svg" alt="Admin Panel" >
     
     
-                        <img src="flags/br.svg" alt="Admin Dashboards" *ngIf="flagsVisible">
+                        <img src="flags/in.svg" alt="Admin Panels" >
     
     
-                        <img src="flags/tr.svg" alt="Admin Templatess" *ngIf="flagsVisible">
+                        <img src="flags/br.svg" alt="Admin Dashboards" >
     
     
-                        <img src="flags/gb.svg" alt="Google Admin" *ngIf="flagsVisible">
+                        <img src="flags/tr.svg" alt="Admin Templatess" >
+    
+    
+                        <img src="flags/gb.svg" alt="Google Admin" >
     
                     </div>
                 </div>
@@ -336,49 +336,50 @@
                   <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
                 </div>
               </div>
-    
+    <mat-nav-list>
+        <ng-container *ngFor="let item of menuItems">
+          <!-- Parent Item -->
+          <a mat-list-item 
+             (click)="onMenuItemClick(item)"
+             [ngClass]="{'active': item.isOpen}"
+             [routerLink]="item.children.length ? null : item.path"
+             routerLinkActive="active">
+            <i [className]="item.icon" style="margin-right: 20px;"></i>
+            <span>{{ item.label }}</span>
       
-          <mat-nav-list>
-            <ng-container *ngFor="let item of menuItems">
-              <!-- Parent Item -->
-              <a mat-list-item (click)="onMenuItemClick(item)" [ngClass]="{'active': item.isOpen}" [routerLink]="item.path"
-              routerLinkActive="active">
-                <i [className]="item.icon" style="margin-right: 12px;"></i>
-                <span>{{ item.label }}</span>
+            <!-- Toggle Icon for Dropdown -->
+            <mat-icon *ngIf="item.children?.length" 
+                      (click)="toggleDropdown(item); $event.stopPropagation()" 
+                      style="position: absolute; top: 11px; right: 10px;">
+              {{ item.isOpen ? 'expand_less' : 'chevron_right' }}
+            </mat-icon>
+          </a>
       
-                <!-- Toggle Icon for Dropdown -->
-                <mat-icon *ngIf="item.children?.length" (click)="toggleDropdown(item); $event.stopPropagation()" style="position: absolute; top: 11px;
-    right: 10px;">
-                  {{ item.isOpen ? 'expand_less' : 'chevron_right' }}
-                </mat-icon>
+          <!-- Submenu -->
+          <div *ngIf="item.isOpen" class="dropdown-content">
+            <ng-container *ngFor="let child of item.children">
+              <a mat-list-item 
+                 (click)="onMenuItemClick(child)" 
+                 [routerLink]="child.path"
+                 routerLinkActive="active"
+                 class="child-item" >
+                <i [className]="child.icon" style="margin-right: 6px;"></i>
+                {{ child.label }}
+                
               </a>
-      
-              <!-- Child Items (Dropdown) -->
-              <div *ngIf="item.isOpen" class="dropdown-content">
-                <a
-                  mat-list-item
-                  *ngFor="let child of item.children"
-                  (click)="onMenuItemClick(child)"
-                  class="child-item" [routerLink]="item.path"
-                  routerLinkActive="active">
-                  <i [className]="child.icon" style="margin-right: 6px;"></i>
-                  {{ child.label }}
-                </a>
-              </div>
             </ng-container>
-          </mat-nav-list>
-
-
-          <app-footer/>
-
-        </mat-sidenav>
-      
-        <!-- Main Content -->
+        </div>
+        </ng-container>
         
-            
-            <router-outlet></router-outlet>
-      </mat-sidenav-container>
-      
+      </mat-nav-list>
+      <app-footer />
 
-</div>
+    </mat-sidenav>
+  
+    <!-- Main Content -->
+    
+        <div class="content"></div>
+        <router-outlet></router-outlet>
+  </mat-sidenav-container>
+  
 
