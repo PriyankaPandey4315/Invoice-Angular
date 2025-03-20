@@ -45,7 +45,6 @@ import { HrApprovalsComponent } from './human-resources/hr-approvals/hr-approval
 import { AttendanceComponent } from './human-resources/attendance/attendance.component';
 import { StaffLeavesComponent } from './human-resources/staff-leaves/staff-leaves.component';
 import { HolidaysComponent } from './human-resources/holidays/holidays.component';
-import { ActiveDescendantKeyManager } from '@angular/cdk/a11y';
 import { AccountsComponent } from './accounts/accounts.component';
 import { IncomeComponent } from './accounts/income/income.component';
 import { PaymentComponent } from './accounts/payment/payment.component';
@@ -54,7 +53,6 @@ import { InvoiceDetailComponent } from './accounts/invoice-detail/invoice-detail
 import { CreateInvoiceComponent } from './accounts/create-invoice/create-invoice.component';
 import { ExpensesComponent } from './accounts/expenses/expenses.component';
 import { SalariesComponent } from './salaries/salaries.component';
-import { SafeSubscriber } from 'rxjs/internal/Subscriber';
 import { SalaryListComponent } from './salaries/salary-list/salary-list.component';
 import { PayslipComponent } from './salaries/payslip/payslip.component';
 import { RoomsComponent } from './rooms/rooms.component';
@@ -133,6 +131,7 @@ export const routes: Routes = [
   },
   {
     path:  'doctors',
+    // loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule)
     component: DoctorsComponent,
     children: [
       
@@ -147,7 +146,7 @@ export const routes: Routes = [
         {
           path:'doctors-cards', 
           component: DoctorsCardsComponent
-      },
+        },
         {
             path:'doctors-profile', 
             component: DoctorsProfileComponent
@@ -246,6 +245,7 @@ export const routes: Routes = [
   },
   {
     path:  'accounts',
+    // loadChildren: () => import('./accounts/accounts.module').then(m => m.AccountsModule)
     component: AccountsComponent,
     children:[
         {
