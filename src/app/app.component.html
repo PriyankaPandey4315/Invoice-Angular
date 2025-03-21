@@ -34,7 +34,7 @@
                     <img src="flags/fr.svg" class="header-country-flag" alt="Bootstrap Dashboards" 
                         id="fr-flag" >
                         </div>
-                <div class="dropdown-menu dropdown-menu-end dropdown-mini">
+                <div class="dropdown-menu dropdown-menu-end dropdown-mini" >
                     <div class="country-container" >
                         <a href="index-2.html" class="py-2">
                             <img src="assets/images/flags/1x1/us.svg" alt="Admin Panel">
@@ -51,9 +51,8 @@
                           <a href="index-2.html" class="py-2">
                             <img src="assets/images/flags/1x1/gb.svg" alt="Google Admin">
                           </a>
-              
-    
                     </div>
+    
                 </div>
                 </a>
             </div>
@@ -342,24 +341,29 @@
     <mat-nav-list>
         <ng-container *ngFor="let item of menuItems">
           <!-- Parent Item -->
+           <div class="parent-class">
           <a mat-list-item 
              (click)="onMenuItemClick(item)"
              [ngClass]="{'active': item.isOpen}"
              [routerLink]="item.children.length ? null : item.path"
-             routerLinkActive="active">
-            <i [className]="item.icon" style="margin-right: 20px;"></i>
+             routerLinkActive="active" style="border-radius: 2px;">
+            <i [className]="item.icon" style="margin-right: 20px; font-size: 20px;"></i>
             <span>{{ item.label }}</span>
       
             <!-- Toggle Icon for Dropdown -->
+             
             <mat-icon *ngIf="item.children?.length" 
                       (click)="toggleDropdown(item); $event.stopPropagation()" 
-                      style="position: absolute; top: 11px; right: 10px;">
+                      style="position: absolute; top: 11px; right: 10px;" >
               {{ item.isOpen ? 'expand_less' : 'chevron_right' }}
             </mat-icon>
+        
           </a>
-      
+
           <!-- Submenu -->
-          <div *ngIf="item.isOpen" class="dropdown-content">
+
+        </div>
+          <div *ngIf="item.isOpen" class="dropdown-content" >
             <ng-container *ngFor="let child of item.children">
               <a mat-list-item 
                  (click)="onMenuItemClick(child)" 

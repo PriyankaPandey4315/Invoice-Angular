@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
-import { AccountsRoutingModule } from "./accounts.routing.module";
 import { CommonModule } from "@angular/common";
+import { SalariesRouting } from "./salaries.routing";
 
 @NgModule({
     declarations: [
@@ -8,8 +8,8 @@ import { CommonModule } from "@angular/common";
     ],
     imports: [
       CommonModule,
-      AccountsRoutingModule
-    ],
+      SalariesRouting
+    ]
   })
-  export class AccountsModule {}
+  export class SalariesModule {}
   

@@ -14,7 +14,6 @@ import { FooterComponent } from "./shared/footer/footer.component";
 })
 export class AppComponent implements OnInit{
 
-
   isOpen= true;
 
   menuItems=MenuItems;

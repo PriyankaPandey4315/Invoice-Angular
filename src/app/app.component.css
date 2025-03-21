@@ -79,7 +79,11 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   mat-nav-list {
     padding: 0;
   }
-  
+ .parent-class :hover {
+    background-color: #d3dde6;
+    border-radius: 2px;
+  }
+
   mat-list-item {
     display: flex;
     align-items: center;
@@ -91,23 +95,7 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   mat-list-item mat-icon {
     margin-right: 16px;
   }
-mat-icon:hover {
-    background-color: #1976d2;
-  }
-  mat-list-item:hover {
-    background-color: #e0e0e0;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  mat-list-item {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-  }
   
-  .child-item.active {
-  background-color: #ffff;
-}
   .content {
     padding: 16px;
     display: flex;
@@ -117,7 +105,7 @@ mat-icon:hover {
   app-footer{
     position: fixed;
     bottom: 0;
-  left: 0;
+    left: 0;
     height: 100px;
     width: 100%;
     border-radius: 2px;
@@ -125,4 +113,17 @@ mat-icon:hover {
   .item.icon{
     height: 100px;
   }
- 
+
+  .dropdown-content:hover{
+    background-color: #fff; 
+    border-radius: 2px; :hover{background-color: #d3dde6;
+      border-radius: 2px;
+    }
+  }
+.icon-class{
+  font-size: 100px;
+}
+label{
+  background-color: #1976d2;
+}
+

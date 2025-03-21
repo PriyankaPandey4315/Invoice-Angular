@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-statistics',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.css'
 })

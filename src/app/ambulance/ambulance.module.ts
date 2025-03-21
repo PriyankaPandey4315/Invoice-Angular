@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
-import { AccountsRoutingModule } from "./accounts.routing.module";
 import { CommonModule } from "@angular/common";
+import { AmbulanceRouting } from "./ambulance.routing";
+
 
 @NgModule({
     declarations: [
@@ -8,8 +9,8 @@ import { CommonModule } from "@angular/common";
     ],
     imports: [
       CommonModule,
-      AccountsRoutingModule
-    ],
+      AmbulanceRouting
+    ]
   })
-  export class AccountsModule {}
+  export class AmbulanceModule {}
   

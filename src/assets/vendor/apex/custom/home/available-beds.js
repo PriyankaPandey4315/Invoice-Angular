@@ -1,3 +1,4 @@
+function renderAvailableBedsChart(){
 var options = {
   chart: {
     height: 400,
@@ -92,3 +93,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#availableBeds"), options);
 
 chart.render();
+}
