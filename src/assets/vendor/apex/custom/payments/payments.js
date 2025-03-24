@@ -1,3 +1,4 @@
+function renderPayments(){
 var options = {
   chart: {
     height: 300,
@@ -88,3 +89,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#payments"), options);
 
 chart.render();
+}

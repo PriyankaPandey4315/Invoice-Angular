@@ -17,15 +17,15 @@ declare const renderAge: any;
 })
 export class HospitalDashboardComponent implements OnInit {
   ngOnInit(): void {
-    this.renderChart();
-    this.loadChart();
-    this.load();
+    this.renderAvailableChart();
+    this.renderTreatmentChart();
+    this.renderPatientsChart();
     this.renderClaimsChart();
     this.renderAgeChart();
     this.renderEarningsChart();
   }
 
-  renderChart() {
+  renderAvailableChart() {
     if (typeof renderAvailableBedsChart === 'function') {
       renderAvailableBedsChart(); // Call the function from available-beds.js
     } else {
@@ -33,7 +33,7 @@ export class HospitalDashboardComponent implements OnInit {
     }
   }
 
-  loadChart(){
+  renderTreatmentChart(){
     if(typeof renderTreatment === 'function'){
       renderTreatment();
     }else{
@@ -41,7 +41,7 @@ export class HospitalDashboardComponent implements OnInit {
     }
   }
 
-load(){
+  renderPatientsChart(){
   if(typeof renderPatients === 'function'){
     renderPatients();
   }else{

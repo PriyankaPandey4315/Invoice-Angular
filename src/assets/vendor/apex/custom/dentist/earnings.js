@@ -1,4 +1,5 @@
 // Sparkline 1
+function renderEarnings(){
 var options1 = {
   series: [70],
   chart: {
@@ -172,3 +173,4 @@ var options4 = {
 
 var chart4 = new ApexCharts(document.querySelector("#sparkline4"), options4);
 chart4.render();
+}

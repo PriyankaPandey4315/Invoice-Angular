@@ -38,9 +38,13 @@
               "node_modules/remixicon/fonts/remixicon.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/morris.js/morris.css"
+
             ],
             "scripts": [
+              "src/assets/js/morris-chart.js",
+
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
@@ -149,7 +153,9 @@
               "src/assets/vendor/morris/custom/donutFormatter.js",
               "src/assets/vendor/morris/custom/morrisBar.js",
               "src/assets/vendor/morris/custom/negativeValues.js",
-              "src/assets/vendor/morris/custom/stackedBar.js"
+              "src/assets/vendor/morris/custom/stackedBar.js",
+               "node_modules/raphael/raphael.min.js",
+               "node_modules/morris.js/morris.min.js"
     
 
 

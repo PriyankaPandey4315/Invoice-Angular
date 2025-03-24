@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var calendarEl = document.getElementById("dayGrid");
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {

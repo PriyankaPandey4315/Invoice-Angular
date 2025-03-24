@@ -1,3 +1,4 @@
+function renderStatistics(){
 var options = {
   chart: {
     height: 470,
@@ -92,3 +93,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#admissions"), options);
 
 chart.render();
+}

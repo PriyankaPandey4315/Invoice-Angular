@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { SharedModule } from '../../core/shared-module/common-module';
 
 @Component({
   selector: 'app-holidays',
-  imports: [],
+  imports: [SharedModule],
   templateUrl: './holidays.component.html',
   styleUrl: './holidays.component.css'
 })

@@ -1,3 +1,4 @@
+function renderActivity(){
 var options = {
   chart: {
     height: 150,
@@ -78,3 +79,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#docActivity"), options);
 chart.render();
+}

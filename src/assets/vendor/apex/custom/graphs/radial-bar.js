@@ -1,3 +1,4 @@
+function renderRadial(){
 var options = {
   series: [40, 50, 60, 70, 80],
   chart: {
@@ -40,3 +41,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#radial"), options);
 chart.render();
+}

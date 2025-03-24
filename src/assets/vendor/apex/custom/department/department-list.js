@@ -1,3 +1,4 @@
+function renderList(){
 var options = {
   chart: {
     width: 360,
@@ -26,3 +27,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#total-department"), options);
 chart.render();
+}

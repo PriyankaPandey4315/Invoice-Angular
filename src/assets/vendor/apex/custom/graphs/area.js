@@ -1,3 +1,4 @@
+function renderArea(){
 var options = {
   chart: {
     height: 300,
@@ -99,3 +100,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#areaGraph"), options);
 
 chart.render();
+}

@@ -1,5 +1,5 @@
 // Europe
-$(function () {
+$(function() {
   $("#mapEurope").vectorMap({
     map: "europe_mill",
     zoomOnScroll: false,

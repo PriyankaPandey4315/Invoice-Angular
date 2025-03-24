@@ -1,3 +1,4 @@
+ function renderGuage(){
 var options = {
   series: [75],
   chart: {
@@ -45,3 +46,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#gauge"), options);
 chart.render();
+}

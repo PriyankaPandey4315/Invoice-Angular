@@ -1,3 +1,4 @@
+function renderMap(){
 options = {
   series: [
     {
@@ -116,4 +117,5 @@ options = {
 };
 
 var chart = new ApexCharts(document.querySelector("#heatmap"), options);
-chart.render();
+chart.render();}
+

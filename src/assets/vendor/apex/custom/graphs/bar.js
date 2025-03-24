@@ -1,3 +1,4 @@
+function renderBar(){
 var options = {
   chart: {
     height: 300,
@@ -99,3 +100,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#barGraph"), options);
 
 chart.render();
+}

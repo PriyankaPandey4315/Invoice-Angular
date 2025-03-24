@@ -1,3 +1,5 @@
+function renderPie(){
+
 var options = {
   chart: {
     width: 300,
@@ -28,3 +30,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#pie"), options);
 chart.render();
+}

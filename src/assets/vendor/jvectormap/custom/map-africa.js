@@ -1,5 +1,5 @@
 // Africa
-$(function () {
+$(function() {
   $("#mapAfrica").vectorMap({
     map: "africa_mill",
     backgroundColor: "transparent",

@@ -1,5 +1,5 @@
 // Denmark
-$(function () {
+$(function() {
   $("#mapDenmark").vectorMap({
     map: "dk_mill",
     zoomOnScroll: false,

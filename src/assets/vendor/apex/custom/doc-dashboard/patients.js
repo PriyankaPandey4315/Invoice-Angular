@@ -1,3 +1,4 @@
+function renderPatients(){
 var options = {
   chart: {
     height: 300,
@@ -87,3 +88,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#patients"), options);
 
 chart.render();
+}
