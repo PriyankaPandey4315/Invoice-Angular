@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { SharedModule } from './core/shared-module/common-module';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { QuillModule } from 'ngx-quill';
+
 
 @NgModule({
   imports: [ 
-    SharedModule,
+    
+    FullCalendarModule,
     AppComponent, // ✅ Import standalone component directly
-    BrowserModule
+    BrowserModule,
+    QuillModule
   ],
   exports: []
 })

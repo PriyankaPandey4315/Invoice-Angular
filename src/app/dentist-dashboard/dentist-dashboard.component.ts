@@ -6,7 +6,7 @@ declare const renderIncome:any;
 declare const renderAppointments:any;
 declare const renderClaims:any;
 declare const renderEarnings:any;
-declare const renderGender:any;
+declare const renderGenderAge:any;
 declare const renderPatients:any;
 declare const renderSurgeries:any;
 
@@ -23,7 +23,7 @@ export class DentistDashboardComponent implements OnInit {
       this.renderAppointmentsChart();
       this.renderClaimsChart();
       this.renderEarningsChart();
-      this.renderGenderChart();
+      this.renderGenderAgeChart();
       this.renderPatientsChart();
       this.renderSurgeriesChart();
   }
@@ -61,9 +61,9 @@ export class DentistDashboardComponent implements OnInit {
     }
   }
 
-  renderGenderChart(){
-    if(typeof renderGender === 'function'){
-      renderGender();
+  renderGenderAgeChart(){
+    if(typeof renderGenderAge === 'function'){
+      renderGenderAge();
     }else{
       console.log('Chart function is not defined.')
     }

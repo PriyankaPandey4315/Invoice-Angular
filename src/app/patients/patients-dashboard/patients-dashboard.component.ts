@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import ApexChart from 'apexcharts'
 
-declare const renderActivity:any;
+declare const renderHealth:any;
 declare const renderInsurance:any;
-declare const renderExpenses:any;
+declare const renderExpense:any;
 declare const renderSparklines:any;
 
 @Component({
@@ -15,15 +15,15 @@ declare const renderSparklines:any;
 export class PatientsDashboardComponent implements OnInit{
 
   ngOnInit(): void {
-      this.renderActivityChart();
+      this.renderHealthChart();
       this.renderInsuranceChart();
-      this.renderExpensesChart();
+      this.renderExpenseChart();
       this.renderSparklinesChart();
   }
 
-  renderActivityChart(){
-    if(typeof renderActivity === 'function'){
-      renderActivity();
+  renderHealthChart(){
+    if(typeof renderHealth === 'function'){
+      renderHealth();
     }else{
       console.log('Chart function is not defined.')
     }
@@ -37,9 +37,9 @@ export class PatientsDashboardComponent implements OnInit{
     }
   }
 
-  renderExpensesChart(){
-    if(typeof renderExpenses === 'function'){
-      renderExpenses();
+  renderExpenseChart(){
+    if(typeof renderExpense === 'function'){
+      renderExpense();
     }else{
       console.log('Chart function is not defined.')
     }

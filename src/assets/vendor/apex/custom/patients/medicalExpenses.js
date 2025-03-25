@@ -1,4 +1,4 @@
-function renderExpenses(){
+function renderExpense(){
 var options = {
   chart: {
     height: 300,

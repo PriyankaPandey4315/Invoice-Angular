@@ -1,4 +1,4 @@
-function renderGender(){
+function renderGenderAge(){
 var options = {
   chart: {
     width: 240,

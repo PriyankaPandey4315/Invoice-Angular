@@ -39,12 +39,13 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
-              "node_modules/morris.js/morris.css"
+              "node_modules/morris.js/morris.css",
+              "node_modules/quill/dist/quill.snow.css"
+
+
 
             ],
             "scripts": [
-              "src/assets/js/morris-chart.js",
-
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
@@ -106,6 +107,7 @@
               "src/assets/vendor/apex/custom/patients/sparklines.js",
               "src/assets/vendor/apex/custom/patients/insuranceClaims.js",
               "src/assets/vendor/apex/custom/patients/medicalExpenses.js",
+              "src/assets/vendor/apex/custom/patients/healthActivity.js",
               "src/assets/vendor/calendar/custom/appointments-calendar.js",
               "src/assets/vendor/apex/custom/department/department-list.js",
               "src/assets/vendor/apex/custom/department/employees.js",

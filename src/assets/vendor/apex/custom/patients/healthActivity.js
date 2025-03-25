@@ -1,4 +1,4 @@
-function renderActivity(){
+function renderHealth(){
 var options = {
   series: [{
     name: 'Health Activity',

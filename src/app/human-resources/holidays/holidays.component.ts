@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { SharedModule } from '../../core/shared-module/common-module';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 @Component({
   selector: 'app-holidays',
-  imports: [SharedModule],
+  imports: [ ],
   templateUrl: './holidays.component.html',
   styleUrl: './holidays.component.css'
 })
 export class HolidaysComponent {
 
+  
 }
