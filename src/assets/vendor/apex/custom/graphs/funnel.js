@@ -1,3 +1,5 @@
+function renderFunnel(){
+
 var options = {
   series: [
     {
@@ -54,3 +56,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#funnel"), options);
 chart.render();
+}

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-level-two-menu',
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './level-two-menu.component.html',
   styleUrl: './level-two-menu.component.css'
 })

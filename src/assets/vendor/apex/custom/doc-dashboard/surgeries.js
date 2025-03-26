@@ -1,3 +1,4 @@
+function renderSurgeries(){
 var options = {
   series: [40, 70],
   chart: {
@@ -35,3 +36,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#surgeries"), options);
 chart.render();
+}

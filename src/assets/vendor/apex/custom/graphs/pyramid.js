@@ -1,3 +1,5 @@
+function renderPyramid(){
+
 var options = {
   series: [
     {
@@ -54,3 +56,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#pyramid"), options);
 chart.render();
+}

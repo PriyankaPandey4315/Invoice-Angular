@@ -1,4 +1,5 @@
 // Morris Bar Colors
+function renderBarColors(){
 Morris.Bar({
   element: "barColors",
   data: [
@@ -33,3 +34,4 @@ Morris.Bar({
     "#a9d6c6",
   ],
 });
+}

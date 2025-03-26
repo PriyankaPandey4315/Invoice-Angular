@@ -1,3 +1,5 @@
+function renderDonut(){
+
 var options = {
   chart: {
     width: 300,
@@ -28,3 +30,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#donut"), options);
 chart.render();
+}

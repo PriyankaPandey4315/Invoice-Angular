@@ -1,5 +1,5 @@
 // USA map 1
-$(function () {
+$(function renderUsa() {
   var cityAreaData = [
     230.2, 750.9, 440.28, 180.15, 69.35, 280.9, 510.5, 99.6, 135.5,
   ];

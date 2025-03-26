@@ -1,3 +1,4 @@
+function renderEmployee(){
 var options = {
   chart: {
     height: 300,
@@ -80,3 +81,4 @@ var chart = new ApexCharts(
   options
 );
 chart.render();
+}

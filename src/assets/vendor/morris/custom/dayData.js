@@ -1,4 +1,6 @@
 // Morris Days
+
+function renderData(){
 var day_data = [
   { period: "2023-10-01", licensed: 3213, "Bootstrap Gallery": 887 },
   { period: "2023-09-30", licensed: 3321, "Bootstrap Gallery": 776 },
@@ -44,3 +46,4 @@ Morris.Line({
     "#a9d6c6",
   ],
 });
+}

@@ -17,11 +17,6 @@ import { ExternalLinkComponent } from './external-link/external-link.component';
 import { ChipComponent } from './chip/chip.component';
 import { BadgeComponent } from './badge/badge.component';
 import { DisabledLinkComponent } from './disabled-link/disabled-link.component';
-import { DoctorsDashboardComponent } from './doctors/doctors-dashboard/doctors-dashboard.component';
-import { DoctorsListComponent } from './doctors/doctors-list/doctors-list.component';
-import { DoctorsProfileComponent } from './doctors/doctors-profile/doctors-profile.component';
-import { AddDoctorComponent } from './doctors/add-doctor/add-doctor.component';
-import { EditDoctorComponent } from './doctors/edit-doctor/edit-doctor.component';
 import { PatientsComponent } from './patients/patients.component';
 import { PatientsListComponent } from './patients/patients-list/patients-list.component';
 import { PatientsDashboardComponent } from './patients/patients-dashboard/patients-dashboard.component';
@@ -32,7 +27,6 @@ import { StaffListComponent } from './staff/staff-list/staff-list.component';
 import { AddStaffComponent } from './staff/add-staff/add-staff.component';
 import { EditStaffDetailComponent } from './staff/edit-staff-detail/edit-staff-detail.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
-import { Appointments1Component } from './appointments/appointments1/appointments1.component';
 import { AppointmentsListComponent } from './appointments/appointments-list/appointments-list.component';
 import { BookAppointmentComponent } from './appointments/book-appointment/book-appointment.component';
 import { EditAppointmentComponent } from './appointments/edit-appointment/edit-appointment.component';
@@ -40,23 +34,6 @@ import { DepartmentsComponent } from './departments/departments.component';
 import { DepartmentListComponent } from './departments/department-list/department-list.component';
 import { AddDepartmentComponent } from './departments/add-department/add-department.component';
 import { EditDepartmentComponent } from './departments/edit-department/edit-department.component';
-import { HumanResourcesComponent } from './human-resources/human-resources.component';
-import { HrApprovalsComponent } from './human-resources/hr-approvals/hr-approvals.component';
-import { AttendanceComponent } from './human-resources/attendance/attendance.component';
-import { StaffLeavesComponent } from './human-resources/staff-leaves/staff-leaves.component';
-import { HolidaysComponent } from './human-resources/holidays/holidays.component';
-import { ActiveDescendantKeyManager } from '@angular/cdk/a11y';
-import { AccountsComponent } from './accounts/accounts.component';
-import { IncomeComponent } from './accounts/income/income.component';
-import { PaymentComponent } from './accounts/payment/payment.component';
-import { InvoicesComponent } from './accounts/invoices/invoices.component';
-import { InvoiceDetailComponent } from './accounts/invoice-detail/invoice-detail.component';
-import { CreateInvoiceComponent } from './accounts/create-invoice/create-invoice.component';
-import { ExpensesComponent } from './accounts/expenses/expenses.component';
-import { SalariesComponent } from './salaries/salaries.component';
-import { SafeSubscriber } from 'rxjs/internal/Subscriber';
-import { SalaryListComponent } from './salaries/salary-list/salary-list.component';
-import { PayslipComponent } from './salaries/payslip/payslip.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { StatisticsComponent } from './rooms/statistics/statistics.component';
 import { RoomsAllotedComponent } from './rooms/rooms-alloted/rooms-alloted.component';
@@ -111,8 +88,8 @@ import { LevelTwoLinkComponent } from './menu-level/level-one-menu/level-two-lin
 import { LevelTwoMenuComponent } from './menu-level/level-one-menu/level-two-menu/level-two-menu.component';
 import { LevelThreeLinkComponent } from './menu-level/level-one-menu/level-two-menu/level-three-link/level-three-link.component';
 import { ValidationsComponent } from './forms/validations/validations.component';
-import { DoctorsCardsComponent } from './doctors/doctors-cards/doctors-cards.component';
 import { ButtonsComponent } from './ui-elements/buttons/buttons.component';
+import { Appointments1Component } from './appointments/appointments1/appointments1.component';
 
 export const routes: Routes = [
   {
@@ -133,34 +110,7 @@ export const routes: Routes = [
   },
   {
     path:  'doctors',
-    component: DoctorsComponent,
-    children: [
-        {
-            path:'doctors-dashboard', 
-            component: DoctorsDashboardComponent
-        },
-        {
-            path:'doctors-list', 
-            component: DoctorsListComponent
-        },
-        {
-          path:'doctors-cards', 
-          component: DoctorsCardsComponent
-      },
-        {
-            path:'doctors-profile', 
-            component: DoctorsProfileComponent
-        },
-        {
-            path:'add-doctor', 
-            component: AddDoctorComponent
-        },
-        {
-            path:'edit-doctor', 
-            component: EditDoctorComponent
-        },
-
-    ],
+    loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule)
   },
   {
     path:'patients',
@@ -245,69 +195,16 @@ export const routes: Routes = [
   },
   {
     path:  'accounts',
-    component: AccountsComponent,
-    children:[
-        {
-            path:  'income',
-            component: IncomeComponent
-          },
-        {
-            path:  'payment',
-            component: PaymentComponent
-          },
-        {
-            path:  'invoices',
-            component: InvoicesComponent
-          },
-        {
-            path:  'invoice-detail',
-            component: InvoiceDetailComponent
-          },
-        {
-            path:  'create-invoice',
-            component: CreateInvoiceComponent
-          },
-        {
-            path:  'expenses',
-            component: ExpensesComponent
-          },
-    ],
+     loadChildren: () => import('./accounts/accounts.module').then(m => m.AccountsModule)
   },
+
   {
     path:  'human-resources',
-    component: HumanResourcesComponent,
-    children:[
-        {
-            path:  'hr-approvals',
-            component: HrApprovalsComponent
-          },
-        {
-            path:  'attendance',
-            component: AttendanceComponent
-          },
-        {
-            path:  'staff-leaves',
-            component: StaffLeavesComponent
-          },
-        {
-            path:  'holidays',
-            component: HolidaysComponent
-          },
-    ],
+    loadChildren : () => import('./human-resources/human-resources.module').then(m =>m.HumanResourcesModule)
   },
   {
     path:  'salaries',
-    component: SalariesComponent,
-    children:[
-        {
-            path:  'salary-list',
-            component: SalaryListComponent
-          },
-          {
-            path:  'payslip',
-            component: PayslipComponent
-          },
-    ],
+   loadChildren:() => import('./salaries/salaries.module').then(m => m.SalariesModule)
   },
   {
     path:  'rooms',
@@ -345,25 +242,7 @@ export const routes: Routes = [
   },
   {
     path:  'ambulance',
-    component: AmbulanceComponent,
-    children:[
-        {
-            path:  'ambulance-list',
-            component: AmbulanceListComponent
-          },
-          {
-            path:  'add-ambulance',
-            component: AddAmbulanceComponent
-          },
-        {
-            path:  'edit-ambulance',
-            component: EditAmbulanceComponent
-          },
-          {
-            path:  'ambulance-call-list',
-            component: AmbulanceCallListComponent
-          },
-    ],
+    loadChildren:() => import('./ambulance/ambulance.module').then(m => m.AmbulanceModule)
   },
   {
     path:  'event-management',
@@ -504,11 +383,11 @@ export const routes: Routes = [
     component: GraphsComponent,
     children:[
         {
-            path:  'apex',
+            path:  'apex-graphs',
             component: ApexGraphsComponent
           },
           {
-            path:  'morris',
+            path:  'morris-graphs',
             component: MorrisGraphsComponent
           },
     ],
@@ -564,23 +443,23 @@ export const routes: Routes = [
     component: MenuLevelComponent,
     children:[
         {
-            path:  'level-one-link',
+            path:  'one-link',
             component: LevelOneLinkComponent
           },
           {
-            path:  'level-one-menu',
+            path:  'one-menu',
             component: LevelOneMenuComponent,
             children:[
                 {
-                    path:  'level-two-link',
+                    path:  'two-link',
                     component: LevelTwoLinkComponent
                   },
                   {
-                    path:  'level-two-menu',
+                    path:  'two-menu',
                     component: LevelTwoMenuComponent,
                     children:[
                         {
-                            path:  'level-three-link',
+                            path:  'three-link',
                             component: LevelThreeLinkComponent
                           },
                     ],

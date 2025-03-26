@@ -1,4 +1,5 @@
 // BP Levels
+function renderSparklines(){
 var options2 = {
   chart: {
     height: 100,
@@ -192,4 +193,5 @@ var options5 = {
 };
 var chart5 = new ApexCharts(document.querySelector("#clolesterolLevels"), options5);
 chart5.render();
+}
 

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-add-room',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './add-room.component.html',
   styleUrl: './add-room.component.css'
 })

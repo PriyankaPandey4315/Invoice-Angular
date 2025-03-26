@@ -1,3 +1,4 @@
+function renderHealth(){
 var options = {
   series: [{
     name: 'Health Activity',
@@ -24,3 +25,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#healthActivity"), options);
 chart.render();
+}

@@ -38,13 +38,18 @@
               "node_modules/remixicon/fonts/remixicon.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/morris.js/morris.css"
+
+
+
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
               "src/assets/js/moment.min.js",
+              "src/assets/js/appointments-calendar.js",
               "src/assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js",
               "src/assets/vendor/overlay-scroll/custom-scrollbar.js",
               "src/assets/js/custom.js",
@@ -57,13 +62,11 @@
               "src/assets/vendor/apex/custom/home/earnings.js",
               "src/assets/vendor/apex/custom/home/gender-age.js",
               "src/assets/vendor/apex/custom/home/claims.js",
-              "src/assets/vendor/apex/apexcharts.min.js",
               "src/assets/vendor/apex/custom/dashboard2/activity.js",
               "src/assets/vendor/apex/custom/dashboard2/income.js",
               "src/assets/vendor/apex/custom/dashboard2/orders.js",
               "src/assets/vendor/rating/raty.js",
               "src/assets/vendor/rating/raty-custom.js",
-              "src/assets/vendor/apex/apexcharts.min.js",
               "src/assets/vendor/apex/custom/dentist/patients.js", 
               "src/assets/vendor/apex/custom/dentist/appointments.js",
               "src/assets/vendor/apex/custom/dentist/surgeries.js",
@@ -105,6 +108,7 @@
               "src/assets/vendor/apex/custom/patients/sparklines.js",
               "src/assets/vendor/apex/custom/patients/insuranceClaims.js",
               "src/assets/vendor/apex/custom/patients/medicalExpenses.js",
+              "src/assets/vendor/apex/custom/patients/healthActivity.js",
               "src/assets/vendor/calendar/custom/appointments-calendar.js",
               "src/assets/vendor/apex/custom/department/department-list.js",
               "src/assets/vendor/apex/custom/department/employees.js",
@@ -152,7 +156,9 @@
               "src/assets/vendor/morris/custom/donutFormatter.js",
               "src/assets/vendor/morris/custom/morrisBar.js",
               "src/assets/vendor/morris/custom/negativeValues.js",
-              "src/assets/vendor/morris/custom/stackedBar.js"
+              "src/assets/vendor/morris/custom/stackedBar.js",
+               "node_modules/raphael/raphael.min.js",
+               "node_modules/morris.js/morris.min.js"
     
 
 

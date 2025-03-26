@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from './core/shared-module/common-module';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { MenuItems } from './core/model/menu-items';
-import { ChangeDetectorRef } from '@angular/core';
 import { FooterComponent } from "./shared/footer/footer.component";
 
 
@@ -14,7 +13,6 @@ import { FooterComponent } from "./shared/footer/footer.component";
   standalone: true, // ✅ Mark as standalone
 })
 export class AppComponent implements OnInit{
-
 
   isOpen= true;
 
@@ -31,7 +29,7 @@ export class AppComponent implements OnInit{
   onMenuItemClick(item: any) {
     if (item.children) {
       this.toggleDropdown(item);
-    } else {
+    } else if  (item.path){
       this.router.navigate([item.path]);
     }
   }
@@ -40,38 +38,20 @@ export class AppComponent implements OnInit{
     // Close other dropdowns
     this.menuItems.forEach(menu => {
       if (menu !== item) menu.isOpen = false;
+      this.closeAllChildren(menu);
+      
     });
 
     // Toggle the clicked item
     item.isOpen = !item.isOpen;
   }
-
-  // onMenuItemClick(item: any) {
-  //   console.log('Before toggle:', item.isOpen);
-  //   if (item.children?.length) {
-  //     item.isOpen = !item.isOpen;
-  //     console.log('After toggle:', item.isOpen);
-  //   } else {
-  //     this.router.navigate([item.path]);
-  //   }
-  // }
-  
-
- 
-
-
-  flagsVisible = false;
-
-  
-  showFlags() {
-   console.log('mouseenter');
-    this.flagsVisible = true;
-  }
-
-  
-  hideFlags() {
-    console.log('mouseleave');
-    this.flagsVisible = false;
+  closeAllChildren(item: any) {
+    if (item.children) {
+      item.children.forEach((child: any) => {
+        child.isOpen = false;
+        this.closeAllChildren(child);
+      });
+    }
   }
 }
 

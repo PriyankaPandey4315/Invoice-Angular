@@ -1,3 +1,4 @@
+function renderClaims(){
 var options = {
   chart: {
     height: 160,
@@ -80,3 +81,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#claims"), options);
 chart.render();
+}

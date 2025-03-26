@@ -1,3 +1,4 @@
+function renderGenderAge(){
 var options = {
   chart: {
     width: 240,
@@ -18,3 +19,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#genderAge"), options);
 chart.render();
+}

@@ -1,3 +1,4 @@
+function renderIncome(){
 var options = {
   chart: {
     height: 250,
@@ -92,3 +93,4 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#income"), options);
 
 chart.render();
+}

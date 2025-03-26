@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare const renderPayments:any;
 
 @Component({
   selector: 'app-payment',
@@ -6,6 +8,18 @@ import { Component } from '@angular/core';
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.css'
 })
-export class PaymentComponent {
+export class PaymentComponent implements OnInit{
+
+ngOnInit(): void {
+    this.renderPaymentsChart();
+}
+
+renderPaymentsChart(){
+  if(typeof renderPayments === 'function'){
+    renderPayments();
+  }else{
+    console.log('Chart function is not defined.')
+  }
+}
 
 }

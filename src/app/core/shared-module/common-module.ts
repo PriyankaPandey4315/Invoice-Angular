@@ -5,4 +5,12 @@ import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatMenuModule } from '@angular/material/menu';
 
-export const SharedModule = [CommonModule,MatSidenavModule,MatListModule, MatIconModule, MatButtonModule, MatMenuModule]
+
+
+export const SharedModule = [CommonModule,
+    MatSidenavModule,
+    MatListModule, 
+    MatIconModule, 
+    MatButtonModule, 
+    MatMenuModule,
+]

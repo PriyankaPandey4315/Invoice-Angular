@@ -1,3 +1,4 @@
+function renderGender(){
 var options = {
   chart: {
     width: 250,
@@ -18,3 +19,4 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#gender"), options);
 chart.render();
+}

@@ -1,3 +1,4 @@
+function renderColumn(){
 var options = {
   series: [
     {
@@ -123,3 +124,4 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#columnArea"), options);
 chart.render();
+}
