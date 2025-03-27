@@ -10,9 +10,12 @@ import { FooterComponent } from "./shared/footer/footer.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   imports: [SharedModule, RouterOutlet, RouterModule, FooterComponent],
-  standalone: true, // ✅ Mark as standalone
+  standalone: true, 
 })
+
 export class AppComponent implements OnInit{
+
+isSidebarExpanded = true;
 
   isOpen= true;
 
@@ -23,8 +26,10 @@ export class AppComponent implements OnInit{
   }
 
  
-  toggleDrawer(drawer: any) {
-    drawer.toggle();
+  
+  toggleDrawer() {
+    this.isSidebarExpanded = !this.isSidebarExpanded;
+
   }
   onMenuItemClick(item: any) {
     if (item.children) {
@@ -35,14 +40,12 @@ export class AppComponent implements OnInit{
   }
 
   toggleDropdown(item: any) {
-    // Close other dropdowns
     this.menuItems.forEach(menu => {
       if (menu !== item) menu.isOpen = false;
       this.closeAllChildren(menu);
       
     });
 
-    // Toggle the clicked item
     item.isOpen = !item.isOpen;
   }
   closeAllChildren(item: any) {

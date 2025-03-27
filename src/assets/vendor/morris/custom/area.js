@@ -1,5 +1,5 @@
 // Morris Area Chart
-function renderArea(){
+
 Morris.Area({
   element: "areaChart",
   data: [
@@ -46,5 +46,6 @@ Morris.Area({
   resize: true,
   redraw: true,
 });
-}
+
+
 

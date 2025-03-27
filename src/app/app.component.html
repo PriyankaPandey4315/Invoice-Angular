@@ -1,7 +1,6 @@
-
 <div class="app-header d-flex align-items-center">
     <div class="d-flex">
-        <button class="pin-sidebar" type="button" (click)="toggleDrawer(drawer)">
+        <button class="pin-sidebar" type="button" (click)="toggleDrawer()">
             <i class="ri-menu-line"></i>
         </button>
     </div>
@@ -318,7 +317,7 @@
                     <h6 class="m-0">James Bruton</h6>
                 </div>
                 <div class="mx-3 my-2 d-grid">
-                    <a href="login.html" class="btn btn-danger">Logout</a>
+                    <a routerLink="/login-signup/login" class="btn btn-danger">Logout</a>
                 </div>
             </div>
         </div>
@@ -327,13 +326,13 @@
         <!-- Header user settings ends -->
      
 
-<div style="height: 100vh;">
+<div style="height: 107vh;">
     <mat-sidenav-container class="sidenav-container">
         <!-- Drawer -->
-        <mat-sidenav #drawer mode="side" opened>
+        <mat-sidenav #drawer mode="side"  [opened]="true" [style.width]="isSidebarExpanded ? '250px' : '60px'" class="main-content">
             <div class="sidebar-profile">
                 <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
-                <div class="m-0">
+                <div *ngIf="isSidebarExpanded" class="m-0">
                   <h5 class="mb-1 profile-name text-nowrap text-truncate">Nick Gonzalez</h5>
                   <p class="m-0 small profile-name text-nowrap text-truncate">Dept Admin</p>
                 </div>
@@ -348,7 +347,7 @@
              [routerLink]="item.children.length ? null : item.path"
              routerLinkActive="active" style="border-radius: 2px;">
             <i [className]="item.icon" style="margin-right: 20px; font-size: 20px;"></i>
-            <span>{{ item.label }}</span>
+            <span  *ngIf="isSidebarExpanded">{{ item.label }}</span>
       
             <!-- Toggle Icon for Dropdown -->
              
@@ -363,7 +362,7 @@
           <!-- Submenu -->
 
         </div>
-          <div *ngIf="item.isOpen" class="dropdown-content" >
+          <div *ngIf="item.isOpen && isSidebarExpanded" class="dropdown-content" >
             <ng-container *ngFor="let child of item.children">
               <a mat-list-item 
                  (click)="onMenuItemClick(child)" 
@@ -379,15 +378,18 @@
         </ng-container>
         
       </mat-nav-list>
-      <app-footer />
+      <app-footer *ngIf="isSidebarExpanded" />
+      
 
     </mat-sidenav>
   
     <!-- Main Content -->
-    
-        <div class="content"></div>
+
+    <div class="main-content" [ngClass]="isSidebarExpanded ? 'expanded-content' : 'collapsed-content'">
         <router-outlet></router-outlet>
-  </mat-sidenav-container>
+      </div>
+      
+    </mat-sidenav-container>
   </div>
   
   
