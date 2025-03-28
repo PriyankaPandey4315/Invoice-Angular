@@ -82,13 +82,13 @@ export const MenuItems=[
       {icon:'', label:'Placeholders', path:'/ui-elements/placeholders'},
       {icon:'', label:'Spinners', path:'/ui-elements/spinners'},
      ]},
-     {icon:'ri-notification-badge-line', label:'Jquery Components', path:'/jquery-components', isOpen: false, children:[
-      {icon:'', label:'Accordions', path:'/jquery-components/accordions'},
-      {icon:'', label:'Carousel', path:'/jquery-components/carousel'},
-      {icon:'', label:'Modals', path:'/jquery-components/modals'},
-      {icon:'', label:'Popovers', path:'/jquery-components/popovers'},
-      {icon:'', label:'Tabs', path:'/jquery-components/tabs'},
-      {icon:'', label:'Tooltips', path:'/jquery-components/tooltips'},
+     {icon:'ri-notification-badge-line', label:'Jquery Components', path:'/jquery', isOpen: false, children:[
+      {icon:'', label:'Accordions', path:'/jquery/accordions'},
+      {icon:'', label:'Carousel', path:'/jquery/carousel'},
+      {icon:'', label:'Modals', path:'/jquery/modals'},
+      {icon:'', label:'Popovers', path:'/jquery/popovers'},
+      {icon:'', label:'Tabs', path:'/jquery/tabs'},
+      {icon:'', label:'Tooltips', path:'/jquery/tooltips'},
     ]},
     {icon:'ri-terminal-window-line', label:'Forms', path:'/forms',isOpen: false,  children:[
       {icon:'', label:'Form Inputs', path:'/forms/form-inputs'},

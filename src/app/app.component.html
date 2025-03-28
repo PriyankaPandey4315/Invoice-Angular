@@ -317,7 +317,7 @@
                     <h6 class="m-0">James Bruton</h6>
                 </div>
                 <div class="mx-3 my-2 d-grid">
-                    <a routerLink="/login-signup/login" class="btn btn-danger">Logout</a>
+                    <a href="/login-signup/login" class="btn btn-danger">Logout</a>
                 </div>
             </div>
         </div>
@@ -329,7 +329,7 @@
 <div style="height: 107vh;">
     <mat-sidenav-container class="sidenav-container">
         <!-- Drawer -->
-        <mat-sidenav #drawer mode="side"  [opened]="true" [style.width]="isSidebarExpanded ? '250px' : '60px'" class="main-content">
+        <mat-sidenav #drawer mode="side"  [opened]="true" [style.width]="isSidebarExpanded ? '260px' : '60px'" class="main-content">
             <div class="sidebar-profile">
                 <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
                 <div *ngIf="isSidebarExpanded" class="m-0">
@@ -384,11 +384,11 @@
     </mat-sidenav>
   
     <!-- Main Content -->
-
+<div class="content">
     <div class="main-content" [ngClass]="isSidebarExpanded ? 'expanded-content' : 'collapsed-content'">
         <router-outlet></router-outlet>
       </div>
-      
+    </div>
     </mat-sidenav-container>
   </div>
   
