@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import 'raphael/raphael.min.js';
 import 'morris.js/morris.min.js';
 
-declare var Morris: any;
-declare var Raphael: any;
+declare var Morris: any; // Declare Morris.js globally
 
-declare const renderBarColors:any;
-declare const renderData:any;
 
 @Component({
   selector: 'app-morris-graphs',
@@ -14,24 +11,17 @@ declare const renderData:any;
   templateUrl: './morris-graphs.component.html',
   styleUrl: './morris-graphs.component.css'
 })
-export class MorrisGraphsComponent implements OnInit{
+export class MorrisGraphsComponent implements AfterViewInit {
 
-ngOnInit(): void {
-  if (typeof Morris !== 'undefined') {
-    console.log('Morris.js is loaded ✅');
-    this.renderAreaChart();
-  } else {
-    console.error('Morris.js is not loaded ❌');
+  @ViewChild("areaChart", { static: true }) areaChart!: ElementRef;
+
+  ngAfterViewInit(): void {
+ this.loadMorrisAreaChart(); // Ensure DOM is ready
   }
-    // this.renderBarColorsChart();
-    // this.renderDataChart();
-}
 
-renderAreaChart(){
-  if(typeof Morris!== 'undefined'){
- 
-    new Morris.Area({
-  element: "areaChart",
+loadMorrisAreaChart(){
+Morris.Area({
+  element: this.areaChart.nativeElement,
   data: [
     { y: "2017", a: 10, b: 5, c: 2 },
     { y: "2018", a: 40, b: 15, c: 8 },
@@ -76,25 +66,9 @@ renderAreaChart(){
   resize: true,
   redraw: true,
 });
-}else {
-  console.log('Morris.js is not loaded.');
-}
 
-// renderBarColorsChart(){
-//   if(typeof renderBarColors === 'function'){
-//     renderBarColors();
-//   }else{
-//     console.log('Chart function is not defined.')
-//   }
-// }
 
-// renderDataChart(){
-//   if(typeof renderData === 'function'){
-//     renderData();
-//   }else{
-//     console.log('Chart function is not defined.')
-//   }
-// }
 
 }
+
 }
