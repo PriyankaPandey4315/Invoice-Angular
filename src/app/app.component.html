@@ -324,12 +324,12 @@
 </div>
 
         <!-- Header user settings ends -->
-     
+
 
 <div style="height: 107vh;">
     <mat-sidenav-container class="sidenav-container">
         <!-- Drawer -->
-        <mat-sidenav #drawer mode="side"  [opened]="true" [style.width]="isSidebarExpanded ? '260px' : '60px'" class="main-content">
+        <mat-sidenav #drawer mode="side"  [opened]="true" [style.width]="isSidebarExpanded ? '250px' : '60px'" class="main-content">
             <div class="sidebar-profile">
                 <img src="assets/images/user6.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates">
                 <div *ngIf="isSidebarExpanded" class="m-0">
@@ -368,8 +368,8 @@
                  (click)="onMenuItemClick(child)" 
                  [routerLink]="child.path"
                  routerLinkActive="active"
-                 class="child-item" >
-                <i [className]="child.icon" style="margin-right: 6px;"></i>
+                 class="child-item"  >
+                <i [className]="child.icon" style="margin-left: 18%;"></i>
                 {{ child.label }}
                 
               </a>
@@ -384,10 +384,12 @@
     </mat-sidenav>
   
     <!-- Main Content -->
-<div class="content">
+     
+<div class="content" >
     <div class="main-content" [ngClass]="isSidebarExpanded ? 'expanded-content' : 'collapsed-content'">
         <router-outlet></router-outlet>
       </div>
+      <router-outlet></router-outlet>
     </div>
     </mat-sidenav-container>
   </div>

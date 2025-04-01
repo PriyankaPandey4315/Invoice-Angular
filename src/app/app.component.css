@@ -121,7 +121,7 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   .content {
     padding: 16px;
     display: flex;
-    justify-content: ce;
+    justify-content: center;
   }
 
   app-footer{

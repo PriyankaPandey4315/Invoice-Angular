@@ -22,7 +22,7 @@ export const MenuItems=[
       {icon: '', label: 'Edit Staff Detail', path: '/staff/edit-staff-detail'},
     ]},
     {icon:'ri-dossier-line', label: 'Appointments', path: '/appointments', isOpen: false,  children: [
-      {icon: '', label: 'Appointments Dashboard', path: '/appointments/appointments1'},
+      {icon: '', label: 'Appointments', path: '/appointments/appointments1'},
       {icon: '', label: 'Appointments List', path: '/appointments/appointments-list'},
       {icon: '', label: 'Book Appointment', path: '/appointments/book-appointment'},
       {icon: '', label: 'Edit Appointment', path: '/appointments/edit-appointment'},

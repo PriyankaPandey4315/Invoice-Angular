@@ -9,4 +9,11 @@ import { RouterLink, RouterModule } from '@angular/router';
 })
 export class SignupComponent {
 
+  constructor() {
+    document.body.classList.add('no-scroll'); 
+  }
+
+  ngOnDestroy() {
+    document.body.classList.remove('no-scroll'); 
+  }
 }
